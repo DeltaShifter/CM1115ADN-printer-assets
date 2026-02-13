@@ -1,0 +1,2 @@
+/usr/share/system-config-printer/printerproperties.py
+/var/lib/dpkg/info/com.pantum.pantumprint.list

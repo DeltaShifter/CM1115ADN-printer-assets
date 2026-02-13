@@ -1,0 +1,1726 @@
+*PPD-Adobe: "4.3"
+*%
+*% For information on using this, and to obtain the required backend
+*% script, consult http://www.openprinting.org/
+*%
+*% This file is published under the GNU General Public License
+*%
+*% PPD-O-MATIC (4.0.0 or newer) generated this PPD file. It is for use with 
+*% all programs and environments which use PPD files for dealing with
+*% printer capability information. The printer must be configured with the
+*% "foomatic-rip" backend filter script of Foomatic 4.0.0 or newer. This 
+*% file and "foomatic-rip" work together to support PPD-controlled printer
+*% driver option access with all supported printer drivers and printing
+*% spoolers.
+*%
+*% To save this file on your disk, wait until the download has completed
+*% (the animation of the browser logo must stop) and then use the
+*% "Save as..." command in the "File" menu of your browser or in the 
+*% pop-up manu when you click on this document with the right mouse button.
+*% DO NOT cut and paste this file into an editor with your mouse. This can
+*% introduce additional line breaks which lead to unexpected results.
+*%
+*% You may save this file as 'Pantum CP9500DN PCL.ppd'
+*%
+*%
+*FormatVersion:	"4.3"
+*FileVersion:	"1.1"
+*LanguageVersion: English 
+*LanguageEncoding: ISOLatin1
+*cupsPJLCharset: "UTF-8"
+*PCFileName:	"CP9500DN.PPD"
+*Manufacturer:	"Pantum"
+*Product:	"(Pantum CP9500DN series)"
+*cupsVersion:	1.0
+*cupsManualCopies: False
+*cupsModelNumber:  2
+*cupsFilter:    "application/vnd.pantumprint-pdf 21 pantumprint-pdftopcl"
+*cupsFilter2:	"application/vnd.pantumprint-pdf application/vnd.cups-raw 21 pantumprint-pdftopcl"
+*cupsFilter:    "application/vnd.cups-command 0 pantumprint-commandtodev"
+*cupsFilter2:	"application/vnd.cups-command application/vnd.cups-raw 0 pantumprint-commandtodev"
+*%cupsPreFilter: "application/pdf 100 pantumprint-pdftopdf"
+*%pprRIP:        foomatic-rip other
+*ModelName:     "Pantum CP9500DN Series"
+*NickName:      "Pantum CP9500DN Series PCL"
+*ShortNickName: "CP9500DN Series PCL"
+*PSVersion:	"(3010.000) 550"
+*PSVersion:	"(3010.000) 651"
+*PSVersion:	"(3010.000) 652"
+*PSVersion:	"(3010.000) 653"
+*PSVersion:	"(3010.000) 704"
+*PSVersion:	"(3010.000) 705"
+*PSVersion:	"(3010.000) 800"
+*PSVersion:	"(3010.000) 815"
+*PSVersion:	"(3010.000) 850"
+*PSVersion:	"(3010.000) 860"
+*PSVersion:	"(3010.000) 861"
+*PSVersion:	"(3010.000) 862"
+*PSVersion:	"(3010.000) 863"
+*PSVersion:	"(3010.000) 864"
+*PSVersion:	"(3010.000) 870"
+*LanguageLevel:	"3"
+*ColorDevice:	True
+*DefaultColorSpace: RGB
+*FileSystem:	False
+*Throughput:	"1"
+*LandscapeOrientation: Plus90
+*TTRasterizer:	Type42
+*cupsCommands:  "ReprotLevels"
+*1284DeviceID: "MFG:Pantum;MDL:CP9500DN;"
+*cupsSNMPSupplies: False
+*SupportPaperString: True
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B5               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Env10            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Glossy        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Labels        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Card          *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble   *MediaType Glossy
+*UIConstraints: *Duplex DuplexNoTumble   *MediaType Labels
+*UIConstraints: *Duplex DuplexNoTumble   *MediaType Card
+
+*% == Constraints (MediaType vs. Paper Source) ==
+*UIConstraints: *MediaType Labels        *InputSlot UpperCassette
+*UIConstraints: *MediaType Labels        *InputSlot LowerCassette
+*UIConstraints: *MediaType Labels        *InputSlot ThirdCassette
+*UIConstraints: *MediaType Labels        *InputSlot Tray4
+*UIConstraints: *MediaType Labels        *InputSlot Tray5
+
+*% == Constraints (Paper Source vs. MediaType) ==
+*UIConstraints: *InputSlot UpperCassette *MediaType Labels        
+*UIConstraints: *InputSlot LowerCassette *MediaType Labels        
+*UIConstraints: *InputSlot ThirdCassette *MediaType Labels        
+*UIConstraints: *InputSlot Tray4         *MediaType Labels        
+*UIConstraints: *InputSlot Tray5         *MediaType Labels        
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexTumble
+*UIConstraints: *PageSize B5               *Duplex DuplexTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexTumble
+*UIConstraints: *PageSize Env10            *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexTumble *PageSize A5
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *Duplex DuplexTumble *PageSize B5
+*UIConstraints: *Duplex DuplexTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Glossy        *Duplex DuplexTumble
+*UIConstraints: *MediaType Labels        *Duplex DuplexTumble
+*UIConstraints: *MediaType Card          *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexTumble     *MediaType Glossy
+*UIConstraints: *Duplex DuplexTumble     *MediaType Labels
+*UIConstraints: *Duplex DuplexTumble     *MediaType Card
+
+*% == Constraints (CustomPageSize vs. Duplex) ==
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CustomPageSize) ==
+*NonUIConstraints: *Duplex DuplexNoTumble          *CustomPageSize True
+*NonUIConstraints: *Duplex DuplexTumble            *CustomPageSize True
+
+*% == Constraints (Trays vs. InputSlot) ==
+*UIConstraints: *Trays Tray12 *InputSlot ThirdCassette
+*UIConstraints: *Trays Tray12 *InputSlot Tray4
+*UIConstraints: *Trays Tray12 *InputSlot Tray5
+*UIConstraints: *Trays Tray123 *InputSlot Tray4
+*UIConstraints: *Trays Tray123 *InputSlot Tray5
+*UIConstraints: *Trays Tray1234 *InputSlot Tray5
+
+*% == Constraints (InputSlot vs. Trays) ==
+*UIConstraints: *InputSlot ThirdCassette *Trays Tray12
+*UIConstraints: *InputSlot Tray4 *Trays Tray12
+*UIConstraints: *InputSlot Tray5 *Trays Tray12
+*UIConstraints: *InputSlot Tray4 *Trays Tray123
+*UIConstraints: *InputSlot Tray5 *Trays Tray123
+*UIConstraints: *InputSlot Tray5 *Trays Tray1234
+
+*% == Constraints (Trays vs. SepSource) ==
+*UIConstraints: *Trays Tray12 *SepSource Tray3
+*UIConstraints: *Trays Tray12 *SepSource Tray4
+*UIConstraints: *Trays Tray12 *SepSource Tray5
+*UIConstraints: *Trays Tray123 *SepSource Tray4
+*UIConstraints: *Trays Tray123 *SepSource Tray5
+*UIConstraints: *Trays Tray1234 *SepSource Tray5
+
+*% == Constraints (SepSource vs. Trays) ==
+*UIConstraints: *SepSource Tray3 *Trays Tray12
+*UIConstraints: *SepSource Tray4 *Trays Tray12
+*UIConstraints: *SepSource Tray5 *Trays Tray12
+*UIConstraints: *SepSource Tray4 *Trays Tray123
+*UIConstraints: *SepSource Tray5 *Trays Tray123
+*UIConstraints: *SepSource Tray5 *Trays Tray1234
+
+*% == Constraints (OutputFinisher vs. OptOutputBins) ==
+*UIConstraints: *OutputFinisher NotInstalledM *OptOutputBins OBin1
+*UIConstraints: *OutputFinisher NotInstalledM *OptOutputBins OBin2
+*UIConstraints: *OutputFinisher NotInstalledM *OptOutputBins OBin3
+
+*% == Constraints (OptOutputBins vs. OutputFinisher) ==
+*UIConstraints: *OptOutputBins OBin1 *OutputFinisher NotInstalledM
+*UIConstraints: *OptOutputBins OBin2 *OutputFinisher NotInstalledM
+*UIConstraints: *OptOutputBins OBin3 *OutputFinisher NotInstalledM
+
+*% == Constraints (OutputFinisher vs. StapleJob) ==
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob Left
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob Top
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob Bottom
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob Right
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob LeftDual
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob RightDual
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob TopDual
+*UIConstraints: *OutputFinisher NotInstalledM *StapleJob BottomDual
+
+*% == Constraints (StapleJob vs. OutputFinisher) ==
+*UIConstraints: *StapleJob Left *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob Top *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob Bottom *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob Right *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob LeftDual *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob RightDual *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob TopDual *OutputFinisher NotInstalledM
+*UIConstraints: *StapleJob BottomDual *OutputFinisher NotInstalledM
+
+*% == Constraints (OutputFinisher vs. HolePunch) ==
+*UIConstraints: *OutputFinisher NotInstalledM *HolePunch 2Hole
+*UIConstraints: *OutputFinisher NotInstalledM *HolePunch 4Hole
+
+*% == Constraints (HolePunch vs. OutputFinisher) ==
+*UIConstraints: *HolePunch 2Hole *OutputFinisher NotInstalledM
+*UIConstraints: *HolePunch 4Hole *OutputFinisher NotInstalledM
+
+*% == Constraints (OutputFinisher vs. Fold) ==
+*UIConstraints: *OutputFinisher NotInstalledM *Fold OnlyFold
+*UIConstraints: *OutputFinisher NotInstalledM *Fold SaddleStitch
+*UIConstraints: *OutputFinisher NotInstalledM *Fold BiFold
+*UIConstraints: *OutputFinisher NotInstalledM *Fold TriFold
+
+*% == Constraints (Fold vs. OutputFinisher) ==
+*UIConstraints: *Fold OnlyFold *OutputFinisher NotInstalledM
+*UIConstraints: *Fold SaddleStitch *OutputFinisher NotInstalledM
+*UIConstraints: *Fold BiFold *OutputFinisher NotInstalledM
+*UIConstraints: *Fold TriFold *OutputFinisher NotInstalledM
+
+*% == Constraints (OptDuplex vs. Duplex) ==
+*UIConstraints: *OptDuplex NotInstalledM *Duplex DuplexNoTumble
+*UIConstraints: *OptDuplex NotInstalledM *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. OptDuplex) ==
+*UIConstraints: *Duplex DuplexNoTumble *OptDuplex NotInstalledM
+*UIConstraints: *Duplex DuplexTumble *OptDuplex NotInstalledM
+
+*% == Constraints (OptOutputBins vs. OutputBins) ==
+*UIConstraints: *OptOutputBins StandardBin *OutputBins Bin1
+*UIConstraints: *OptOutputBins StandardBin *OutputBins Bin2
+*UIConstraints: *OptOutputBins StandardBin *OutputBins Bin3
+*UIConstraints: *OptOutputBins OBin1       *OutputBins Bin2
+*UIConstraints: *OptOutputBins OBin1       *OutputBins Bin3
+*UIConstraints: *OptOutputBins OBin2       *OutputBins Bin3
+
+*% == Constraints (OutputBins vs. OptOutputBins) ==
+*UIConstraints: *OutputBins Bin1 *OptOutputBins StandardBin
+*UIConstraints: *OutputBins Bin2 *OptOutputBins StandardBin
+*UIConstraints: *OutputBins Bin3 *OptOutputBins StandardBin
+*UIConstraints: *OutputBins Bin2 *OptOutputBins OBin1
+*UIConstraints: *OutputBins Bin3 *OptOutputBins OBin1
+*UIConstraints: *OutputBins Bin3 *OptOutputBins OBin2
+
+*% == Constraints (OptOutputBins vs. StapleJob) ==
+*UIConstraints: *OptOutputBins StandardBin *StapleJob Left
+*UIConstraints: *OptOutputBins StandardBin *StapleJob Top
+*UIConstraints: *OptOutputBins StandardBin *StapleJob Bottom
+*UIConstraints: *OptOutputBins StandardBin *StapleJob Right
+*UIConstraints: *OptOutputBins StandardBin *StapleJob LeftDual
+*UIConstraints: *OptOutputBins StandardBin *StapleJob RightDual
+*UIConstraints: *OptOutputBins StandardBin *StapleJob TopDual
+*UIConstraints: *OptOutputBins StandardBin *StapleJob BottomDual
+*UIConstraints: *OptOutputBins OBin1 *StapleJob Left
+*UIConstraints: *OptOutputBins OBin1 *StapleJob Top
+*UIConstraints: *OptOutputBins OBin1 *StapleJob Bottom
+*UIConstraints: *OptOutputBins OBin1 *StapleJob Right
+*UIConstraints: *OptOutputBins OBin1 *StapleJob LeftDual
+*UIConstraints: *OptOutputBins OBin1 *StapleJob RightDual
+*UIConstraints: *OptOutputBins OBin1 *StapleJob TopDual
+*UIConstraints: *OptOutputBins OBin1 *StapleJob BottomDual
+
+*% == Constraints (StapleJob vs. OptOutputBins) ==
+*UIConstraints: *StapleJob Left *OptOutputBins StandardBin
+*UIConstraints: *StapleJob Top *OptOutputBins StandardBin
+*UIConstraints: *StapleJob Bottom *OptOutputBins StandardBin
+*UIConstraints: *StapleJob Right *OptOutputBins StandardBin
+*UIConstraints: *StapleJob LeftDual *OptOutputBins StandardBin
+*UIConstraints: *StapleJob RightDual *OptOutputBins StandardBin
+*UIConstraints: *StapleJob TopDual *OptOutputBins StandardBin
+*UIConstraints: *StapleJob BottomDual *OptOutputBins StandardBin
+*UIConstraints: *StapleJob Left *OptOutputBins OBin1
+*UIConstraints: *StapleJob Top *OptOutputBins OBin1
+*UIConstraints: *StapleJob Bottom *OptOutputBins OBin1
+*UIConstraints: *StapleJob Right *OptOutputBins OBin1
+*UIConstraints: *StapleJob LeftDual *OptOutputBins OBin1
+*UIConstraints: *StapleJob RightDual *OptOutputBins OBin1
+*UIConstraints: *StapleJob TopDual *OptOutputBins OBin1
+*UIConstraints: *StapleJob BottomDual *OptOutputBins OBin1
+
+*% == Constraints (OptOutputBins vs. HolePunch) ==
+*UIConstraints: *OptOutputBins StandardBin *HolePunch 2Hole
+*UIConstraints: *OptOutputBins StandardBin *HolePunch 4Hole
+
+*% == Constraints (StapleJob vs. OptOutputBins) ==
+*UIConstraints: *HolePunch 2Hole *OptOutputBins StandardBin
+*UIConstraints: *HolePunch 4Hole *OptOutputBins StandardBin
+
+*% == Constraints (OptOutputBins vs. Fold) ==
+*UIConstraints: *OptOutputBins StandardBin *Fold OnlyFold
+*UIConstraints: *OptOutputBins StandardBin *Fold SaddleStitch
+*UIConstraints: *OptOutputBins StandardBin *Fold BiFold
+*UIConstraints: *OptOutputBins StandardBin *Fold TriFold
+*UIConstraints: *OptOutputBins OBin1 *Fold OnlyFold
+*UIConstraints: *OptOutputBins OBin1 *Fold SaddleStitch
+*UIConstraints: *OptOutputBins OBin1 *Fold BiFold
+*UIConstraints: *OptOutputBins OBin1 *Fold TriFold
+*UIConstraints: *OptOutputBins OBin2 *Fold OnlyFold
+*UIConstraints: *OptOutputBins OBin2 *Fold SaddleStitch
+*UIConstraints: *OptOutputBins OBin2 *Fold BiFold
+*UIConstraints: *OptOutputBins OBin2 *Fold TriFold
+
+*% == Constraints (Fold vs. OptOutputBins) ==
+*UIConstraints: *Fold OnlyFold *OptOutputBins StandardBin
+*UIConstraints: *Fold SaddleStitch *OptOutputBins StandardBin
+*UIConstraints: *Fold BiFold *OptOutputBins StandardBin
+*UIConstraints: *Fold TriFold *OptOutputBins StandardBin
+*UIConstraints: *Fold OnlyFold *OptOutputBins OBin1
+*UIConstraints: *Fold SaddleStitch *OptOutputBins OBin1
+*UIConstraints: *Fold BiFold *OptOutputBins OBin1
+*UIConstraints: *Fold TriFold *OptOutputBins OBin1
+*UIConstraints: *Fold OnlyFold *OptOutputBins OBin2
+*UIConstraints: *Fold SaddleStitch *OptOutputBins OBin2
+*UIConstraints: *Fold BiFold *OptOutputBins OBin2
+*UIConstraints: *Fold TriFold *OptOutputBins OBin2
+
+*% == Constraints (HolePunch vs. OutputBins) ==
+*UIConstraints: *HolePunch 2Hole *OutputBins StandardBin
+*UIConstraints: *HolePunch 2Hole *OutputBins Bin3
+*UIConstraints: *HolePunch 4Hole *OutputBins StandardBin
+*UIConstraints: *HolePunch 4Hole *OutputBins Bin3
+
+*% == Constraints (OutputBins vs. HolePunch) ==
+*UIConstraints: *OutputBins StandardBin *HolePunch 2Hole
+*UIConstraints: *OutputBins StandardBin *HolePunch 4Hole
+*UIConstraints: *OutputBins Bin3 *HolePunch 2Hole
+*UIConstraints: *OutputBins Bin3 *HolePunch 4Hole
+
+*% == Constraints (HolePunch vs. OutputBins) ==
+*UIConstraints: *HolePunch 2Hole *OutputBins StandardBin
+*UIConstraints: *HolePunch 4Hole *OutputBins StandardBin
+*UIConstraints: *HolePunch 2Hole *OutputBins Bin3
+*UIConstraints: *HolePunch 4Hole *OutputBins Bin3
+
+*% == Constraints (OutputBins vs. StapleJob) ==
+*UIConstraints: *OutputBins StandardBin *StapleJob Left
+*UIConstraints: *OutputBins StandardBin *StapleJob Top
+*UIConstraints: *OutputBins StandardBin *StapleJob Bottom
+*UIConstraints: *OutputBins StandardBin *StapleJob Right
+*UIConstraints: *OutputBins StandardBin *StapleJob LeftDual
+*UIConstraints: *OutputBins StandardBin *StapleJob RightDual
+*UIConstraints: *OutputBins StandardBin *StapleJob TopDual
+*UIConstraints: *OutputBins StandardBin *StapleJob BottomDual
+*UIConstraints: *OutputBins Bin1 *StapleJob Left
+*UIConstraints: *OutputBins Bin1 *StapleJob Top
+*UIConstraints: *OutputBins Bin1 *StapleJob Bottom
+*UIConstraints: *OutputBins Bin1 *StapleJob Right
+*UIConstraints: *OutputBins Bin1 *StapleJob LeftDual
+*UIConstraints: *OutputBins Bin1 *StapleJob RightDual
+*UIConstraints: *OutputBins Bin1 *StapleJob TopDual
+*UIConstraints: *OutputBins Bin1 *StapleJob BottomDual
+*UIConstraints: *OutputBins Bin3 *StapleJob Left
+*UIConstraints: *OutputBins Bin3 *StapleJob Top
+*UIConstraints: *OutputBins Bin3 *StapleJob Bottom
+*UIConstraints: *OutputBins Bin3 *StapleJob Right
+*UIConstraints: *OutputBins Bin3 *StapleJob LeftDual
+*UIConstraints: *OutputBins Bin3 *StapleJob RightDual
+*UIConstraints: *OutputBins Bin3 *StapleJob TopDual
+*UIConstraints: *OutputBins Bin3 *StapleJob BottomDual
+
+*% == Constraints (StapleJob vs. OutputBins) ==
+*UIConstraints: *StapleJob Left *OutputBins StandardBin
+*UIConstraints: *StapleJob Top  *OutputBins StandardBin
+*UIConstraints: *StapleJob Bottom  *OutputBins StandardBin
+*UIConstraints: *StapleJob Right *OutputBins StandardBin
+*UIConstraints: *StapleJob LeftDual  *OutputBins StandardBin
+*UIConstraints: *StapleJob RightDual  *OutputBins StandardBin
+*UIConstraints: *StapleJob TopDual *OutputBins StandardBin
+*UIConstraints: *StapleJob BottomDual  *OutputBins StandardBin
+*UIConstraints: *StapleJob Left *OutputBins Bin1
+*UIConstraints: *StapleJob Top  *OutputBins Bin1
+*UIConstraints: *StapleJob Bottom  *OutputBins Bin1
+*UIConstraints: *StapleJob Right *OutputBins Bin1
+*UIConstraints: *StapleJob LeftDual  *OutputBins Bin1
+*UIConstraints: *StapleJob RightDual  *OutputBins Bin1
+*UIConstraints: *StapleJob TopDual *OutputBins Bin1
+*UIConstraints: *StapleJob BottomDual  *OutputBins Bin1
+*UIConstraints: *StapleJob Left *OutputBins Bin3
+*UIConstraints: *StapleJob Top  *OutputBins Bin3
+*UIConstraints: *StapleJob Bottom  *OutputBins Bin3
+*UIConstraints: *StapleJob Right *OutputBins Bin3
+*UIConstraints: *StapleJob LeftDual  *OutputBins Bin3
+*UIConstraints: *StapleJob RightDual  *OutputBins Bin3
+*UIConstraints: *StapleJob TopDual *OutputBins Bin3
+*UIConstraints: *StapleJob BottomDual  *OutputBins Bin3
+
+*% == Constraints (OutputBins vs. Fold) ==
+*UIConstraints: *OutputBins StandardBin *Fold OnlyFold
+*UIConstraints: *OutputBins StandardBin *Fold SaddleStitch
+*UIConstraints: *OutputBins StandardBin *Fold BiFold
+*UIConstraints: *OutputBins StandardBin *Fold TriFold
+*UIConstraints: *OutputBins Bin1 *Fold OnlyFold
+*UIConstraints: *OutputBins Bin1 *Fold SaddleStitch
+*UIConstraints: *OutputBins Bin1 *Fold BiFold
+*UIConstraints: *OutputBins Bin1 *Fold TriFold
+*UIConstraints: *OutputBins Bin2 *Fold OnlyFold
+*UIConstraints: *OutputBins Bin2 *Fold SaddleStitch
+*UIConstraints: *OutputBins Bin2 *Fold BiFold
+*UIConstraints: *OutputBins Bin2 *Fold TriFold
+
+*% == Constraints (Fold vs. OutputBins) ==
+*UIConstraints: *Fold OnlyFold *OutputBins StandardBin
+*UIConstraints: *Fold SaddleStitch *OutputBins StandardBin
+*UIConstraints: *Fold BiFold *OutputBins StandardBin
+*UIConstraints: *Fold TriFold *OutputBins StandardBin
+*UIConstraints: *Fold OnlyFold *OutputBins Bin1
+*UIConstraints: *Fold SaddleStitch *OutputBins Bin1
+*UIConstraints: *Fold BiFold *OutputBins Bin1
+*UIConstraints: *Fold TriFold *OutputBins Bin1
+*UIConstraints: *Fold OnlyFold *OutputBins Bin2
+*UIConstraints: *Fold SaddleStitch *OutputBins Bin2
+*UIConstraints: *Fold BiFold *OutputBins Bin2
+*UIConstraints: *Fold TriFold *OutputBins Bin2
+
+*% == Constraints (HolePunch vs. Fold) ==
+*UIConstraints: *HolePunch 2Hole *Fold OnlyFold
+*UIConstraints: *HolePunch 2Hole *Fold SaddleStitch
+*UIConstraints: *HolePunch 2Hole *Fold BiFold
+*UIConstraints: *HolePunch 2Hole *Fold TriFold
+*UIConstraints: *HolePunch 4Hole *Fold OnlyFold
+*UIConstraints: *HolePunch 4Hole *Fold SaddleStitch
+*UIConstraints: *HolePunch 4Hole *Fold BiFold
+*UIConstraints: *HolePunch 4Hole *Fold TriFold
+
+*% == Constraints (Fold vs. HolePunch) ==
+*UIConstraints: *Fold OnlyFold *HolePunch 2Hole
+*UIConstraints: *Fold SaddleStitch *HolePunch 2Hole
+*UIConstraints: *Fold BiFold *HolePunch 2Hole
+*UIConstraints: *Fold TriFold *HolePunch 2Hole
+*UIConstraints: *Fold OnlyFold *HolePunch 4Hole
+*UIConstraints: *Fold SaddleStitch *HolePunch 4Hole
+*UIConstraints: *Fold BiFold *HolePunch 4Hole
+*UIConstraints: *Fold TriFold *HolePunch 4Hole
+
+*% == Constraints (HolePunch vs. PageSize) ==
+*UIConstraints: *HolePunch 2Hole *PageSize Env10
+*UIConstraints: *HolePunch 2Hole *PageSize EnvDL
+*UIConstraints: *HolePunch 2Hole *PageSize EnvC5
+*UIConstraints: *HolePunch 2Hole *PageSize A6
+*UIConstraints: *HolePunch 2Hole *PageSize A5
+*UIConstraints: *HolePunch 2Hole *PageSize Statement
+*UIConstraints: *HolePunch 4Hole *PageSize Env10
+*UIConstraints: *HolePunch 4Hole *PageSize EnvDL
+*UIConstraints: *HolePunch 4Hole *PageSize EnvC5
+*UIConstraints: *HolePunch 4Hole *PageSize A6
+*UIConstraints: *HolePunch 4Hole *PageSize A5
+*UIConstraints: *HolePunch 4Hole *PageSize Statement
+
+*% == Constraints (PageSize vs. HolePunch) ==
+*UIConstraints: *PageSize Env10     *HolePunch 2Hole
+*UIConstraints: *PageSize EnvDL     *HolePunch 2Hole
+*UIConstraints: *PageSize EnvC5     *HolePunch 2Hole
+*UIConstraints: *PageSize A6        *HolePunch 2Hole
+*UIConstraints: *PageSize A5        *HolePunch 2Hole
+*UIConstraints: *PageSize Statement *HolePunch 2Hole
+*UIConstraints: *PageSize Env10     *HolePunch 4Hole
+*UIConstraints: *PageSize EnvDL     *HolePunch 4Hole
+*UIConstraints: *PageSize EnvC5     *HolePunch 4Hole
+*UIConstraints: *PageSize A6        *HolePunch 4Hole
+*UIConstraints: *PageSize A5        *HolePunch 4Hole
+*UIConstraints: *PageSize Statement *HolePunch 4Hole
+
+*% == Constraints (HolePunch vs. PageRegion) ==
+*UIConstraints: *HolePunch 2Hole *PageRegion Env10
+*UIConstraints: *HolePunch 2Hole *PageRegion EnvDL
+*UIConstraints: *HolePunch 2Hole *PageRegion EnvC5
+*UIConstraints: *HolePunch 2Hole *PageRegion A6
+*UIConstraints: *HolePunch 2Hole *PageRegion A5
+*UIConstraints: *HolePunch 2Hole *PageRegion Statement
+*UIConstraints: *HolePunch 4Hole *PageRegion Env10
+*UIConstraints: *HolePunch 4Hole *PageRegion EnvDL
+*UIConstraints: *HolePunch 4Hole *PageRegion EnvC5
+*UIConstraints: *HolePunch 4Hole *PageRegion A6
+*UIConstraints: *HolePunch 4Hole *PageRegion A5
+*UIConstraints: *HolePunch 4Hole *PageRegion Statement
+
+*% == Constraints (PageRegion vs. HolePunch) ==
+*UIConstraints: *PageRegion Env10     *HolePunch 2Hole
+*UIConstraints: *PageRegion EnvDL     *HolePunch 2Hole
+*UIConstraints: *PageRegion EnvC5     *HolePunch 2Hole
+*UIConstraints: *PageRegion A6        *HolePunch 2Hole
+*UIConstraints: *PageRegion A5        *HolePunch 2Hole
+*UIConstraints: *PageRegion Statement *HolePunch 2Hole
+*UIConstraints: *PageRegion Env10     *HolePunch 4Hole
+*UIConstraints: *PageRegion EnvDL     *HolePunch 4Hole
+*UIConstraints: *PageRegion EnvC5     *HolePunch 4Hole
+*UIConstraints: *PageRegion A6        *HolePunch 4Hole
+*UIConstraints: *PageRegion A5        *HolePunch 4Hole
+*UIConstraints: *PageRegion Statement *HolePunch 4Hole
+
+*% == Constraints (HolePunch vs. MediaType) ==
+*UIConstraints: *HolePunch 2Hole *MediaType Labels
+*UIConstraints: *HolePunch 4Hole *MediaType Labels
+
+*% == Constraints (MediaType vs. HolePunch) ==
+*UIConstraints: *MediaType Labels *HolePunch 2Hole
+*UIConstraints: *MediaType Labels *HolePunch 4Hole
+
+*% == Constraints (StapleJob vs. Fold) ==
+*UIConstraints: *StapleJob Left *Fold OnlyFold
+*UIConstraints: *StapleJob Left *Fold SaddleStitch
+*UIConstraints: *StapleJob Left *Fold BiFold
+*UIConstraints: *StapleJob Left *Fold TriFold
+*UIConstraints: *StapleJob Top *Fold OnlyFold
+*UIConstraints: *StapleJob Top *Fold SaddleStitch
+*UIConstraints: *StapleJob Top *Fold BiFold
+*UIConstraints: *StapleJob Top *Fold TriFold
+*UIConstraints: *StapleJob Bottom *Fold OnlyFold
+*UIConstraints: *StapleJob Bottom *Fold SaddleStitch
+*UIConstraints: *StapleJob Bottom *Fold BiFold
+*UIConstraints: *StapleJob Bottom *Fold TriFold
+*UIConstraints: *StapleJob Right *Fold OnlyFold
+*UIConstraints: *StapleJob Right *Fold SaddleStitch
+*UIConstraints: *StapleJob Right *Fold BiFold
+*UIConstraints: *StapleJob Right *Fold TriFold
+*UIConstraints: *StapleJob LeftDual *Fold OnlyFold
+*UIConstraints: *StapleJob LeftDual *Fold SaddleStitch
+*UIConstraints: *StapleJob LeftDual *Fold BiFold
+*UIConstraints: *StapleJob LeftDual *Fold TriFold
+*UIConstraints: *StapleJob RightDual *Fold OnlyFold
+*UIConstraints: *StapleJob RightDual *Fold SaddleStitch
+*UIConstraints: *StapleJob RightDual *Fold BiFold
+*UIConstraints: *StapleJob RightDual *Fold TriFold
+*UIConstraints: *StapleJob TopDual *Fold OnlyFold
+*UIConstraints: *StapleJob TopDual *Fold SaddleStitch
+*UIConstraints: *StapleJob TopDual *Fold BiFold
+*UIConstraints: *StapleJob TopDual *Fold TriFold
+*UIConstraints: *StapleJob BottomDual *Fold OnlyFold
+*UIConstraints: *StapleJob BottomDual *Fold SaddleStitch
+*UIConstraints: *StapleJob BottomDual *Fold BiFold
+*UIConstraints: *StapleJob BottomDual *Fold TriFold
+
+*% == Constraints (Fold vs. StapleJob) ==
+*UIConstraints: *Fold OnlyFold *StapleJob Left
+*UIConstraints: *Fold SaddleStitch *StapleJob Left
+*UIConstraints: *Fold BiFold *StapleJob Left
+*UIConstraints: *Fold TriFold *StapleJob Left
+*UIConstraints: *Fold OnlyFold *StapleJob Top
+*UIConstraints: *Fold SaddleStitch *StapleJob Top
+*UIConstraints: *Fold BiFold *StapleJob Top
+*UIConstraints: *Fold TriFold *StapleJob Top
+*UIConstraints: *Fold OnlyFold *StapleJob Bottom
+*UIConstraints: *Fold SaddleStitch *StapleJob Bottom
+*UIConstraints: *Fold BiFold *StapleJob Bottom
+*UIConstraints: *Fold TriFold *StapleJob Bottom
+*UIConstraints: *Fold OnlyFold *StapleJob Right
+*UIConstraints: *Fold SaddleStitch *StapleJob Right
+*UIConstraints: *Fold BiFold *StapleJob Right
+*UIConstraints: *Fold TriFold *StapleJob Right
+*UIConstraints: *Fold OnlyFold *StapleJob LeftDual
+*UIConstraints: *Fold SaddleStitch *StapleJob LeftDual
+*UIConstraints: *Fold BiFold *StapleJob LeftDual
+*UIConstraints: *Fold TriFold *StapleJob LeftDual
+*UIConstraints: *Fold OnlyFold *StapleJob RightDual
+*UIConstraints: *Fold SaddleStitch *StapleJob RightDual
+*UIConstraints: *Fold BiFold *StapleJob RightDual
+*UIConstraints: *Fold TriFold *StapleJob RightDual
+*UIConstraints: *Fold OnlyFold *StapleJob TopDual
+*UIConstraints: *Fold SaddleStitch *StapleJob TopDual
+*UIConstraints: *Fold BiFold *StapleJob TopDual
+*UIConstraints: *Fold TriFold *StapleJob TopDual
+*UIConstraints: *Fold OnlyFold *StapleJob BottomDual
+*UIConstraints: *Fold SaddleStitch *StapleJob BottomDual
+*UIConstraints: *Fold BiFold *StapleJob BottomDual
+*UIConstraints: *Fold TriFold *StapleJob BottomDual
+
+*% == Constraints (StapleJob vs. PageSize) ==
+*UIConstraints: *StapleJob Left *PageSize Env10
+*UIConstraints: *StapleJob Left *PageSize EnvDL
+*UIConstraints: *StapleJob Left *PageSize EnvC5
+*UIConstraints: *StapleJob Left *PageSize A6
+*UIConstraints: *StapleJob Left *PageSize A5
+*UIConstraints: *StapleJob Left *PageSize Statement
+*UIConstraints: *StapleJob Top *PageSize Env10
+*UIConstraints: *StapleJob Top *PageSize EnvDL
+*UIConstraints: *StapleJob Top *PageSize EnvC5
+*UIConstraints: *StapleJob Top *PageSize A6
+*UIConstraints: *StapleJob Top *PageSize A5
+*UIConstraints: *StapleJob Top *PageSize Statement
+*UIConstraints: *StapleJob Bottom *PageSize Env10
+*UIConstraints: *StapleJob Bottom *PageSize EnvDL
+*UIConstraints: *StapleJob Bottom *PageSize EnvC5
+*UIConstraints: *StapleJob Bottom *PageSize A6
+*UIConstraints: *StapleJob Bottom *PageSize A5
+*UIConstraints: *StapleJob Bottom *PageSize Statement
+*UIConstraints: *StapleJob Right *PageSize Env10
+*UIConstraints: *StapleJob Right *PageSize EnvDL
+*UIConstraints: *StapleJob Right *PageSize EnvC5
+*UIConstraints: *StapleJob Right *PageSize A6
+*UIConstraints: *StapleJob Right *PageSize A5
+*UIConstraints: *StapleJob Right *PageSize Statement
+*UIConstraints: *StapleJob LeftDual *PageSize Env10
+*UIConstraints: *StapleJob LeftDual *PageSize EnvDL
+*UIConstraints: *StapleJob LeftDual *PageSize EnvC5
+*UIConstraints: *StapleJob LeftDual *PageSize A6
+*UIConstraints: *StapleJob LeftDual *PageSize A5
+*UIConstraints: *StapleJob LeftDual *PageSize Statement
+*UIConstraints: *StapleJob RightDual *PageSize Env10
+*UIConstraints: *StapleJob RightDual *PageSize EnvDL
+*UIConstraints: *StapleJob RightDual *PageSize EnvC5
+*UIConstraints: *StapleJob RightDual *PageSize A6
+*UIConstraints: *StapleJob RightDual *PageSize A5
+*UIConstraints: *StapleJob RightDual *PageSize Statement
+*UIConstraints: *StapleJob TopDual *PageSize Env10
+*UIConstraints: *StapleJob TopDual *PageSize EnvDL
+*UIConstraints: *StapleJob TopDual *PageSize EnvC5
+*UIConstraints: *StapleJob TopDual *PageSize A6
+*UIConstraints: *StapleJob TopDual *PageSize A5
+*UIConstraints: *StapleJob TopDual *PageSize Statement
+*UIConstraints: *StapleJob BottomDual *PageSize Env10
+*UIConstraints: *StapleJob BottomDual *PageSize EnvDL
+*UIConstraints: *StapleJob BottomDual *PageSize EnvC5
+*UIConstraints: *StapleJob BottomDual *PageSize A6
+*UIConstraints: *StapleJob BottomDual *PageSize A5
+*UIConstraints: *StapleJob BottomDual *PageSize Statement
+
+*% == Constraints (PageSize vs. StapleJob) ==
+*UIConstraints: *PageSize Env10     *StapleJob Left
+*UIConstraints: *PageSize EnvDL     *StapleJob Left
+*UIConstraints: *PageSize EnvC5     *StapleJob Left
+*UIConstraints: *PageSize A6        *StapleJob Left
+*UIConstraints: *PageSize A5        *StapleJob Left
+*UIConstraints: *PageSize Statement *StapleJob Left
+*UIConstraints: *PageSize Env10     *StapleJob Top
+*UIConstraints: *PageSize EnvDL     *StapleJob Top
+*UIConstraints: *PageSize EnvC5     *StapleJob Top
+*UIConstraints: *PageSize A6        *StapleJob Top
+*UIConstraints: *PageSize A5        *StapleJob Top
+*UIConstraints: *PageSize Statement *StapleJob Top
+*UIConstraints: *PageSize Env10     *StapleJob Bottom
+*UIConstraints: *PageSize EnvDL     *StapleJob Bottom
+*UIConstraints: *PageSize EnvC5     *StapleJob Bottom
+*UIConstraints: *PageSize A6        *StapleJob Bottom
+*UIConstraints: *PageSize A5        *StapleJob Bottom
+*UIConstraints: *PageSize Statement *StapleJob Bottom
+*UIConstraints: *PageSize Env10     *StapleJob Right
+*UIConstraints: *PageSize EnvDL     *StapleJob Right
+*UIConstraints: *PageSize EnvC5     *StapleJob Right
+*UIConstraints: *PageSize A6        *StapleJob Right
+*UIConstraints: *PageSize A5        *StapleJob Right
+*UIConstraints: *PageSize Statement *StapleJob Right
+*UIConstraints: *PageSize Env10     *StapleJob LeftDual
+*UIConstraints: *PageSize EnvDL     *StapleJob LeftDual
+*UIConstraints: *PageSize EnvC5     *StapleJob LeftDual
+*UIConstraints: *PageSize A6        *StapleJob LeftDual
+*UIConstraints: *PageSize A5        *StapleJob LeftDual
+*UIConstraints: *PageSize Statement *StapleJob LeftDual
+*UIConstraints: *PageSize Env10     *StapleJob RightDual
+*UIConstraints: *PageSize EnvDL     *StapleJob RightDual
+*UIConstraints: *PageSize EnvC5     *StapleJob RightDual
+*UIConstraints: *PageSize A6        *StapleJob RightDual
+*UIConstraints: *PageSize A5        *StapleJob RightDual
+*UIConstraints: *PageSize Statement *StapleJob RightDual
+*UIConstraints: *PageSize Env10     *StapleJob TopDual
+*UIConstraints: *PageSize EnvDL     *StapleJob TopDual
+*UIConstraints: *PageSize EnvC5     *StapleJob TopDual
+*UIConstraints: *PageSize A6        *StapleJob TopDual
+*UIConstraints: *PageSize A5        *StapleJob TopDual
+*UIConstraints: *PageSize Statement *StapleJob TopDual
+*UIConstraints: *PageSize Env10     *StapleJob BottomDual
+*UIConstraints: *PageSize EnvDL     *StapleJob BottomDual
+*UIConstraints: *PageSize EnvC5     *StapleJob BottomDual
+*UIConstraints: *PageSize A6        *StapleJob BottomDual
+*UIConstraints: *PageSize A5        *StapleJob BottomDual
+*UIConstraints: *PageSize Statement *StapleJob BottomDual
+
+*% == Constraints (StapleJob vs. PageRegion) == 11.28 delete by cjl
+
+*% == Constraints (PageRegion vs. StapleJob) == 11.28 delete by cjl
+
+*% == Constraints (StapleJob vs. MediaType) ==
+*UIConstraints: *StapleJob Left *MediaType Labels
+*UIConstraints: *StapleJob Top  *MediaType Labels
+*UIConstraints: *StapleJob Bottom  *MediaType Labels
+*UIConstraints: *StapleJob Right *MediaType Labels
+*UIConstraints: *StapleJob LeftDual  *MediaType Labels
+*UIConstraints: *StapleJob RightDual  *MediaType Labels
+*UIConstraints: *StapleJob TopDual *MediaType Labels
+*UIConstraints: *StapleJob BottomDual  *MediaType Labels
+
+*% == Constraints (MediaType vs. StapleJob) ==
+*UIConstraints: *MediaType Labels *StapleJob Left
+*UIConstraints: *MediaType Labels *StapleJob Top
+*UIConstraints: *MediaType Labels *StapleJob Bottom
+*UIConstraints: *MediaType Labels *StapleJob Right
+*UIConstraints: *MediaType Labels *StapleJob LeftDual
+*UIConstraints: *MediaType Labels *StapleJob RightDual
+*UIConstraints: *MediaType Labels *StapleJob TopDual
+*UIConstraints: *MediaType Labels *StapleJob BottomDual
+
+*% == Constraints (Fold vs. PageSize) ==
+*UIConstraints: *Fold OnlyFold *PageSize Statement
+*UIConstraints: *Fold OnlyFold *PageSize Executive
+*UIConstraints: *Fold OnlyFold *PageSize A5
+*UIConstraints: *Fold OnlyFold *PageSize A6
+*UIConstraints: *Fold OnlyFold *PageSize B5
+*UIConstraints: *Fold OnlyFold *PageSize Env10
+*UIConstraints: *Fold OnlyFold *PageSize EnvDL
+*UIConstraints: *Fold OnlyFold *PageSize EnvC5
+*NonUIConstraints: *Fold OnlyFold *CustomPageSize True
+*UIConstraints: *Fold SaddleStitch *PageSize Statement
+*UIConstraints: *Fold SaddleStitch *PageSize Executive
+*UIConstraints: *Fold SaddleStitch *PageSize A5
+*UIConstraints: *Fold SaddleStitch *PageSize A6
+*UIConstraints: *Fold SaddleStitch *PageSize B5
+*UIConstraints: *Fold SaddleStitch *PageSize Env10
+*UIConstraints: *Fold SaddleStitch *PageSize EnvDL
+*UIConstraints: *Fold SaddleStitch *PageSize EnvC5
+*NonUIConstraints: *Fold SaddleStitch *CustomPageSize True
+*UIConstraints: *Fold BiFold *PageSize Statement
+*UIConstraints: *Fold BiFold *PageSize Executive
+*UIConstraints: *Fold BiFold *PageSize A5
+*UIConstraints: *Fold BiFold *PageSize A6
+*UIConstraints: *Fold BiFold *PageSize B5
+*UIConstraints: *Fold BiFold *PageSize Env10
+*UIConstraints: *Fold BiFold *PageSize EnvDL
+*UIConstraints: *Fold BiFold *PageSize EnvC5
+*NonUIConstraints: *Fold BiFold *CustomPageSize True
+*UIConstraints: *Fold TriFold *PageSize Statement
+*UIConstraints: *Fold TriFold *PageSize Executive
+*UIConstraints: *Fold TriFold *PageSize A5
+*UIConstraints: *Fold TriFold *PageSize A6
+*UIConstraints: *Fold TriFold *PageSize B5
+*UIConstraints: *Fold TriFold *PageSize Env10
+*UIConstraints: *Fold TriFold *PageSize EnvDL
+*UIConstraints: *Fold TriFold *PageSize EnvC5
+*NonUIConstraints: *Fold TriFold *CustomPageSize True
+
+*% == Constraints (PageSize vs. Fold) ==
+*UIConstraints: *PageSize Statement *Fold OnlyFold
+*UIConstraints: *PageSize Executive *Fold OnlyFold
+*UIConstraints: *PageSize A5 *Fold OnlyFold
+*UIConstraints: *PageSize A6 *Fold OnlyFold
+*UIConstraints: *PageSize B5 *Fold OnlyFold
+*UIConstraints: *PageSize Env10 *Fold OnlyFold
+*UIConstraints: *PageSize EnvDL *Fold OnlyFold
+*UIConstraints: *PageSize EnvC5 *Fold OnlyFold
+*NonUIConstraints: *CustomPageSize True *Fold OnlyFold
+*UIConstraints: *PageSize Statement *Fold SaddleStitch
+*UIConstraints: *PageSize Executive *Fold SaddleStitch
+*UIConstraints: *PageSize A5 *Fold SaddleStitch
+*UIConstraints: *PageSize A6 *Fold SaddleStitch
+*UIConstraints: *PageSize B5 *Fold SaddleStitch
+*UIConstraints: *PageSize Env10 *Fold SaddleStitch
+*UIConstraints: *PageSize EnvDL *Fold SaddleStitch
+*UIConstraints: *PageSize EnvC5 *Fold SaddleStitch
+*NonUIConstraints: *CustomPageSize True *Fold SaddleStitch
+*UIConstraints: *PageSize Statement *Fold BiFold
+*UIConstraints: *PageSize Executive *Fold BiFold
+*UIConstraints: *PageSize A5 *Fold BiFold
+*UIConstraints: *PageSize A6 *Fold BiFold
+*UIConstraints: *PageSize B5 *Fold BiFold
+*UIConstraints: *PageSize Env10 *Fold BiFold
+*UIConstraints: *PageSize EnvDL *Fold BiFold
+*UIConstraints: *PageSize EnvC5 *Fold BiFold
+*NonUIConstraints: *CustomPageSize True *Fold BiFold
+*UIConstraints: *PageSize Statement *Fold TriFold
+*UIConstraints: *PageSize Executive *Fold TriFold
+*UIConstraints: *PageSize A5 *Fold TriFold
+*UIConstraints: *PageSize A6 *Fold TriFold
+*UIConstraints: *PageSize B5 *Fold TriFold
+*UIConstraints: *PageSize Env10 *Fold TriFold
+*UIConstraints: *PageSize EnvDL *Fold TriFold
+*UIConstraints: *PageSize EnvC5 *Fold TriFold
+*NonUIConstraints: *CustomPageSize True *Fold TriFold
+
+*% == Constraints (Fold vs. PageRegion) ==
+*UIConstraints: *Fold OnlyFold *PageRegion Statement
+*UIConstraints: *Fold OnlyFold *PageRegion Executive
+*UIConstraints: *Fold OnlyFold *PageRegion A5
+*UIConstraints: *Fold OnlyFold *PageRegion A6
+*UIConstraints: *Fold OnlyFold *PageRegion B5
+*UIConstraints: *Fold OnlyFold *PageRegion Env10
+*UIConstraints: *Fold OnlyFold *PageRegion EnvDL
+*UIConstraints: *Fold OnlyFold *PageRegion EnvC5
+*NonUIConstraints: *Fold OnlyFold *CustomPageRegion True
+*UIConstraints: *Fold SaddleStitch *PageRegion Statement
+*UIConstraints: *Fold SaddleStitch *PageRegion Executive
+*UIConstraints: *Fold SaddleStitch *PageRegion A5
+*UIConstraints: *Fold SaddleStitch *PageRegion A6
+*UIConstraints: *Fold SaddleStitch *PageRegion B5
+*UIConstraints: *Fold SaddleStitch *PageRegion Env10
+*UIConstraints: *Fold SaddleStitch *PageRegion EnvDL
+*UIConstraints: *Fold SaddleStitch *PageRegion EnvC5
+*NonUIConstraints: *Fold SaddleStitch *CustomPageRegion True
+*UIConstraints: *Fold BiFold *PageRegion Statement
+*UIConstraints: *Fold BiFold *PageRegion Executive
+*UIConstraints: *Fold BiFold *PageRegion A5
+*UIConstraints: *Fold BiFold *PageRegion A6
+*UIConstraints: *Fold BiFold *PageRegion B5
+*UIConstraints: *Fold BiFold *PageRegion Env10
+*UIConstraints: *Fold BiFold *PageRegion EnvDL
+*UIConstraints: *Fold BiFold *PageRegion EnvC5
+*NonUIConstraints: *Fold BiFold *CustomPageRegion True
+*UIConstraints: *Fold TriFold *PageRegion Statement
+*UIConstraints: *Fold TriFold *PageRegion Executive
+*UIConstraints: *Fold TriFold *PageRegion A5
+*UIConstraints: *Fold TriFold *PageRegion A6
+*UIConstraints: *Fold TriFold *PageRegion B5
+*UIConstraints: *Fold TriFold *PageRegion Env10
+*UIConstraints: *Fold TriFold *PageRegion EnvDL
+*UIConstraints: *Fold TriFold *PageRegion EnvC5
+*NonUIConstraints: *Fold TriFold *CustomPageRegion True
+
+*% == Constraints (PageRegion vs. Fold) ==
+*UIConstraints: *PageRegion Statement *Fold OnlyFold
+*UIConstraints: *PageRegion Executive *Fold OnlyFold
+*UIConstraints: *PageRegion A5 *Fold OnlyFold
+*UIConstraints: *PageRegion A6 *Fold OnlyFold
+*UIConstraints: *PageRegion B5 *Fold OnlyFold
+*UIConstraints: *PageRegion Env10 *Fold OnlyFold
+*UIConstraints: *PageRegion EnvDL *Fold OnlyFold
+*UIConstraints: *PageRegion EnvC5 *Fold OnlyFold
+*NonUIConstraints: *CustomPageRegion True *Fold OnlyFold
+*UIConstraints: *PageRegion Statement *Fold SaddleStitch
+*UIConstraints: *PageRegion Executive *Fold SaddleStitch
+*UIConstraints: *PageRegion A5 *Fold SaddleStitch
+*UIConstraints: *PageRegion A6 *Fold SaddleStitch
+*UIConstraints: *PageRegion B5 *Fold SaddleStitch
+*UIConstraints: *PageRegion Env10 *Fold SaddleStitch
+*UIConstraints: *PageRegion EnvDL *Fold SaddleStitch
+*UIConstraints: *PageRegion EnvC5 *Fold SaddleStitch
+*NonUIConstraints: *CustomPageRegion True *Fold SaddleStitch
+*UIConstraints: *PageRegion Statement *Fold BiFold
+*UIConstraints: *PageRegion Executive *Fold BiFold
+*UIConstraints: *PageRegion A5 *Fold BiFold
+*UIConstraints: *PageRegion A6 *Fold BiFold
+*UIConstraints: *PageRegion B5 *Fold BiFold
+*UIConstraints: *PageRegion Env10 *Fold BiFold
+*UIConstraints: *PageRegion EnvDL *Fold BiFold
+*UIConstraints: *PageRegion EnvC5 *Fold BiFold
+*NonUIConstraints: *CustomPageRegion True *Fold BiFold
+*UIConstraints: *PageRegion Statement *Fold TriFold
+*UIConstraints: *PageRegion Executive *Fold TriFold
+*UIConstraints: *PageRegion A5 *Fold TriFold
+*UIConstraints: *PageRegion A6 *Fold TriFold
+*UIConstraints: *PageRegion B5 *Fold TriFold
+*UIConstraints: *PageRegion Env10 *Fold TriFold
+*UIConstraints: *PageRegion EnvDL *Fold TriFold
+*UIConstraints: *PageRegion EnvC5 *Fold TriFold
+*NonUIConstraints: *CustomPageRegion True *Fold TriFold
+
+*% == Constraints (Fold vs. MediaType) ==
+*UIConstraints: *Fold OnlyFold *MediaType Labels
+*UIConstraints: *Fold SaddleStitch *MediaType Labels
+*UIConstraints: *Fold BiFold *MediaType Labels
+*UIConstraints: *Fold TriFold *MediaType Labels
+
+*% == Constraints (MediaType vs. Fold) ==
+*UIConstraints: *MediaType Labels *Fold OnlyFold
+*UIConstraints: *MediaType Labels *Fold SaddleStitch
+*UIConstraints: *MediaType Labels *Fold BiFold
+*UIConstraints: *MediaType Labels *Fold TriFold
+
+*% == Constraints (SepPages vs. SepSource) ==
+*UIConstraints: *SepPages NoneF *SepSource Tray1
+*UIConstraints: *SepPages NoneF *SepSource Tray2
+*UIConstraints: *SepPages NoneF *SepSource Tray3
+*UIConstraints: *SepPages NoneF *SepSource Tray4
+*UIConstraints: *SepPages NoneF *SepSource Tray5
+*UIConstraints: *SepPages NoneF *SepSource MultipurposeFeeder
+
+*% == Constraints (SepSource vs. SepPages) ==
+*UIConstraints: *SepSource Tray1 *SepPages NoneF
+*UIConstraints: *SepSource Tray2 *SepPages NoneF
+*UIConstraints: *SepSource Tray3 *SepPages NoneF
+*UIConstraints: *SepSource Tray4 *SepPages NoneF
+*UIConstraints: *SepSource Tray5 *SepPages NoneF
+*UIConstraints: *SepSource MultipurposeFeeder *SepPages NoneF
+
+*% == Constraints (Offset vs. OutputBins) ==
+*UIConstraints: *Offset ON *OutputBins Bin1
+*UIConstraints: *Offset ON *OutputBins Bin3
+*UIConstraints: *Offset ON *OutputBins StandardBin
+
+*% == Constraints (OutputBins vs. Offset) ==
+*UIConstraints: *OutputBins Bin1 *Offset ON
+*UIConstraints: *OutputBins Bin3 *Offset ON
+*UIConstraints: *OutputBins StandardBin *Offset ON
+
+*% == Constraints (Offset vs. PageSize) ==
+*UIConstraints: *Offset ON *PageSize Env10
+*UIConstraints: *Offset ON *PageSize EnvDL
+*UIConstraints: *Offset ON *PageSize EnvC5
+*UIConstraints: *Offset ON *PageSize A6
+*UIConstraints: *Offset ON *PageSize A5
+*UIConstraints: *Offset ON *PageSize Statement
+
+*% == Constraints (PageSize vs. Offset) ==
+*UIConstraints: *PageSize Env10 *Offset ON
+*UIConstraints: *PageSize EnvDL *Offset ON
+*UIConstraints: *PageSize EnvC5 *Offset ON
+*UIConstraints: *PageSize A6 *Offset ON
+*UIConstraints: *PageSize A5 *Offset ON
+*UIConstraints: *PageSize Statement *Offset ON
+
+*% == Constraints (Offset vs. PageRegion) ==
+*UIConstraints: *Offset ON *PageRegion Env10
+*UIConstraints: *Offset ON *PageRegion EnvDL
+*UIConstraints: *Offset ON *PageRegion EnvC5
+*UIConstraints: *Offset ON *PageRegion A6
+*UIConstraints: *Offset ON *PageRegion A5
+*UIConstraints: *Offset ON *PageRegion Statement
+
+*% == Constraints (PageRegion vs. Offset) ==
+*UIConstraints: *PageRegion Env10 *Offset ON
+*UIConstraints: *PageRegion EnvDL *Offset ON
+*UIConstraints: *PageRegion EnvC5 *Offset ON
+*UIConstraints: *PageRegion A6 *Offset ON
+*UIConstraints: *PageRegion A5 *Offset ON
+*UIConstraints: *PageRegion Statement *Offset ON
+
+*% == Constraints (Offset vs. MediaType) ==
+*UIConstraints: *Offset ON *MediaType Labels
+
+*% == Constraints (MediaType vs. Offset) ==
+*UIConstraints: *MediaType Labels *Offset ON
+
+*% == Constraints (Booklet vs. Duplex) ==
+*UIConstraints: *Booklet True *Duplex DuplexNoTumble
+*UIConstraints: *Booklet True *Duplex None
+
+*% == Constraints (Duplex vs. Booklet) ==
+*UIConstraints: *Duplex DuplexNoTumble *Booklet True
+*UIConstraints: *Duplex None *Booklet True
+
+*% == Constraints (HolePunch vs. Booklet) ==
+*UIConstraints: *HolePunch PrinterS  *Booklet True
+*UIConstraints: *HolePunch 2Hole *Booklet True
+*UIConstraints: *HolePunch 4Hole *Booklet True
+
+*% == Constraints (Booklet vs. HolePunch) ==
+*UIConstraints: *Booklet True  *HolePunch PrinterS
+*UIConstraints: *Booklet True  *HolePunch 2Hole
+*UIConstraints: *Booklet True  *HolePunch 4Hole
+
+*% == Constraints (StapleJob vs. Booklet) ==
+*UIConstraints: *StapleJob PrinterS *Booklet True
+*UIConstraints: *StapleJob Left *Booklet True
+*UIConstraints: *StapleJob Top *Booklet True
+*UIConstraints: *StapleJob Bottom *Booklet True
+*UIConstraints: *StapleJob Right *Booklet True
+*UIConstraints: *StapleJob LeftDual *Booklet True
+*UIConstraints: *StapleJob RightDual *Booklet True
+*UIConstraints: *StapleJob TopDual *Booklet True
+*UIConstraints: *StapleJob BottomDual *Booklet True
+
+*% == Constraints (Booklet vs. StapleJob) ==
+*UIConstraints: *Booklet True  *StapleJob PrinterS
+*UIConstraints: *Booklet True  *StapleJob Left
+*UIConstraints: *Booklet True  *StapleJob Top
+*UIConstraints: *Booklet True  *StapleJob Bottom
+*UIConstraints: *Booklet True  *StapleJob Right
+*UIConstraints: *Booklet True  *StapleJob LeftDual
+*UIConstraints: *Booklet True  *StapleJob RightDual
+*UIConstraints: *Booklet True  *StapleJob TopDual
+*UIConstraints: *Booklet True  *StapleJob BottomDual
+
+*% == Constraints (Booklet vs. PamphletPageSize) ==
+*UIConstraints: *Booklet False *PamphletPageSize True
+
+*% == Constraints (PamphletPageSize vs. Booklet) ==
+*UIConstraints: *PamphletPageSize True *Booklet False
+
+*% == Constraints (Fold vs. Booklet) ==
+*UIConstraints: *Fold BiFold *Booklet True
+*UIConstraints: *Fold TriFold *Booklet True
+
+*% == Constraints (Booklet vs. Fold) ==
+*UIConstraints: *Booklet True  *Fold BiFold
+*UIConstraints: *Booklet True  *Fold TriFold
+
+*% == Constraints (Poster vs. Duplex) ==
+*UIConstraints: *Poster 2    *Duplex DuplexTumble
+*UIConstraints: *Poster 2    *Duplex DuplexNoTumble
+*UIConstraints: *Poster 3    *Duplex DuplexTumble
+*UIConstraints: *Poster 3    *Duplex DuplexNoTumble
+*UIConstraints: *Poster 4    *Duplex DuplexTumble
+*UIConstraints: *Poster 4    *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. Poster) ==
+*UIConstraints: *Duplex DuplexTumble     *Poster 2
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 2
+*UIConstraints: *Duplex DuplexTumble     *Poster 3
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 3
+*UIConstraints: *Duplex DuplexTumble     *Poster 4
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 4
+
+*% == Constraints (OutputPageSize vs. Poster) ==
+*UIConstraints: *OutputPageSize True     *Poster 2
+*UIConstraints: *OutputPageSize True     *Poster 3
+*UIConstraints: *OutputPageSize True     *Poster 4
+
+*% == Constraints (Poster vs. OutputPageSize) ==
+*UIConstraints: *Poster 2      *OutputPageSize True
+*UIConstraints: *Poster 3      *OutputPageSize True
+*UIConstraints: *Poster 4      *OutputPageSize True
+
+*% == Constraints (Booklet vs. Poster) ==
+*UIConstraints: *Booklet True     *Poster 2
+*UIConstraints: *Booklet True     *Poster 3
+*UIConstraints: *Booklet True     *Poster 4
+
+*% == Constraints (Poster vs. Booklet) ==
+*UIConstraints: *Poster 2    *Booklet True
+*UIConstraints: *Poster 3    *Booklet True
+*UIConstraints: *Poster 4    *Booklet True
+
+*% == Constraints (Poster vs. Scale) ==
+*UIConstraints: *Poster 2      *Scale 0.25
+*UIConstraints: *Poster 2      *Scale 0.50
+*UIConstraints: *Poster 2      *Scale 1.10
+*UIConstraints: *Poster 2      *Scale 1.20
+*UIConstraints: *Poster 2      *Scale 1.30
+*UIConstraints: *Poster 2      *Scale 1.40
+*UIConstraints: *Poster 2      *Scale 1.50
+*UIConstraints: *Poster 2      *Scale 2.00
+*UIConstraints: *Poster 2      *Scale 3.00
+*UIConstraints: *Poster 2      *Scale 4.00
+*UIConstraints: *Poster 3      *Scale 0.25
+*UIConstraints: *Poster 3      *Scale 0.50
+*UIConstraints: *Poster 3      *Scale 1.10
+*UIConstraints: *Poster 3      *Scale 1.20
+*UIConstraints: *Poster 3      *Scale 1.30
+*UIConstraints: *Poster 3      *Scale 1.40
+*UIConstraints: *Poster 3      *Scale 1.50
+*UIConstraints: *Poster 3      *Scale 2.00
+*UIConstraints: *Poster 3      *Scale 3.00
+*UIConstraints: *Poster 3      *Scale 4.00
+*UIConstraints: *Poster 4      *Scale 0.25
+*UIConstraints: *Poster 4      *Scale 0.50
+*UIConstraints: *Poster 4      *Scale 1.10
+*UIConstraints: *Poster 4      *Scale 1.20
+*UIConstraints: *Poster 4      *Scale 1.30
+*UIConstraints: *Poster 4      *Scale 1.40
+*UIConstraints: *Poster 4      *Scale 1.50
+*UIConstraints: *Poster 4      *Scale 2.00
+*UIConstraints: *Poster 4      *Scale 3.00
+*UIConstraints: *Poster 4      *Scale 4.00
+
+*% == Constraints (Scale vs. Poster) ==
+*UIConstraints: *Scale 0.25      *Poster 2
+*UIConstraints: *Scale 0.50      *Poster 2
+*UIConstraints: *Scale 1.10      *Poster 2
+*UIConstraints: *Scale 1.20      *Poster 2
+*UIConstraints: *Scale 1.30      *Poster 2
+*UIConstraints: *Scale 1.40      *Poster 2
+*UIConstraints: *Scale 1.50      *Poster 2
+*UIConstraints: *Scale 2.00      *Poster 2
+*UIConstraints: *Scale 3.00      *Poster 2
+*UIConstraints: *Scale 4.00      *Poster 2
+*UIConstraints: *Scale 0.25      *Poster 3
+*UIConstraints: *Scale 0.50      *Poster 3
+*UIConstraints: *Scale 1.10      *Poster 3
+*UIConstraints: *Scale 1.20      *Poster 3
+*UIConstraints: *Scale 1.30      *Poster 3
+*UIConstraints: *Scale 1.40      *Poster 3
+*UIConstraints: *Scale 1.50      *Poster 3
+*UIConstraints: *Scale 2.00      *Poster 3
+*UIConstraints: *Scale 3.00      *Poster 3
+*UIConstraints: *Scale 4.00      *Poster 3
+*UIConstraints: *Scale 0.25      *Poster 4
+*UIConstraints: *Scale 0.50      *Poster 4
+*UIConstraints: *Scale 1.10      *Poster 4
+*UIConstraints: *Scale 1.20      *Poster 4
+*UIConstraints: *Scale 1.30      *Poster 4
+*UIConstraints: *Scale 1.40      *Poster 4
+*UIConstraints: *Scale 1.50      *Poster 4
+*UIConstraints: *Scale 2.00      *Poster 4
+*UIConstraints: *Scale 3.00      *Poster 4
+*UIConstraints: *Scale 4.00      *Poster 4
+
+*% == Constraints (OutputPageSize vs. Booklet) ==
+*UIConstraints: *OutputPageSize True     *Booklet True
+
+*% == Constraints (Booklet vs. OutputPageSize) ==
+*UIConstraints: *Booklet True     *OutputPageSize True
+
+*% == Constraints (OutputPageSize vs. Scale) ==
+*UIConstraints: *OutputPageSize True   *Scale 0.25
+*UIConstraints: *OutputPageSize True   *Scale 0.50
+*UIConstraints: *OutputPageSize True   *Scale 1.10
+*UIConstraints: *OutputPageSize True   *Scale 1.20
+*UIConstraints: *OutputPageSize True   *Scale 1.30
+*UIConstraints: *OutputPageSize True   *Scale 1.40
+*UIConstraints: *OutputPageSize True   *Scale 1.50
+*UIConstraints: *OutputPageSize True   *Scale 2.00
+*UIConstraints: *OutputPageSize True   *Scale 3.00
+*UIConstraints: *OutputPageSize True   *Scale 4.00
+
+*% == Constraints (Scale vs. OutputPageSize) ==
+*UIConstraints: *Scale 0.25     *OutputPageSize True
+*UIConstraints: *Scale 0.50     *OutputPageSize True
+*UIConstraints: *Scale 1.10     *OutputPageSize True
+*UIConstraints: *Scale 1.20     *OutputPageSize True
+*UIConstraints: *Scale 1.30     *OutputPageSize True
+*UIConstraints: *Scale 1.40     *OutputPageSize True
+*UIConstraints: *Scale 1.50     *OutputPageSize True
+*UIConstraints: *Scale 2.00     *OutputPageSize True
+*UIConstraints: *Scale 3.00     *OutputPageSize True
+*UIConstraints: *Scale 4.00     *OutputPageSize True
+
+*% == Constraints (CustomPageSize vs. OutputPageSize) ==
+*NonUIConstraints: *CustomPageSize True            *OutputPageSize True
+
+*% == Constraints (OutputPageSize vs. CustomPageSize) ==
+*NonUIConstraints: *OutputPageSize True          *CustomPageSize True
+
+*driverName pxlcolor: ""
+*driverType G/Ghostscript built-in: ""
+*driverUrl: "http://www.ghostscript.com/"
+*driverObsolete: False
+*driverManufacturerSupplied: False
+
+*DefaultResolution: 600dpi
+
+*HWMargins: 18 36 18 36
+
+*FoomaticIDs: Generic-PCL_6_PCL_XL_Printer pxlcolor
+*FoomaticRIPCommandLine: "gs -o -%C -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNO&&
+INTERPOLATE -dNOMEDIAATTRS%B%A%Z -f -"
+*End
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*FoomaticRIPOption PageSize: enum CmdLine B
+*OrderDependency: 100 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/US Letter: ""
+*PageSize Legal/US Legal: ""
+*PageSize Oficio/Oficio (Mexico): ""
+*PageSize B4/B4 (JIS): ""
+*PageSize B5/B5 (JIS): ""
+*PageSize A3/A3: ""
+*PageSize A4/A4: ""
+*PageSize A5/A5: ""
+*PageSize A6/A6: ""
+*PageSize Executive/Executive: ""
+*PageSize Folio/Folio: ""
+*PageSize Statement/Statement: ""
+*PageSize Env10/Envelope #10: ""
+*PageSize EnvC5/Envelope C5: ""
+*PageSize EnvDL/Envelope DL: ""
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 100 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/US Letter: ""
+*PageRegion Legal/US Legal: ""
+*PageRegion Oficio/Oficio (Mexico): ""
+*PageRegion B4/B4 (JIS): ""
+*PageRegion B5/B5 (JIS): ""
+*PageRegion A3/A3: ""
+*PageRegion A4/A4: ""
+*PageRegion A5/A5: ""
+*PageRegion A6/A6: ""
+*PageRegion Executive/Executive: ""
+*PageRegion Folio/Folio: ""
+*PageRegion Statement/Statement: ""
+*PageRegion Env10/Envelope #10: ""
+*PageRegion EnvC5/Envelope C5: ""
+*PageRegion EnvDL/Envelope DL: ""
+*CloseUI: *PageRegion
+
+*OpenUI *OutputPageSize/OutputPageSize: Boolean
+*OrderDependency: 50 AnySetup *OutputPageSize
+*DefaultOutputPageSize: False
+*OutputPageSize False/Off: ""
+*OutputPageSize True/On: ""
+*CloseUI: *OutputPageSize
+
+*DefaultImageableArea: A4
+*ImageableArea Letter/US Letter: "12 12 600 780"
+*ImageableArea Legal/US Legal: "12 12 600 996"
+*ImageableArea Oficio/Oficio (Mexico): "12 12 600 953"
+*ImageableArea B4/B4 (JIS): "12 12 717 1020"
+*ImageableArea B5/B5 (JIS): "12 12 506 716"
+*ImageableArea A3/A3: "12 12 830 1179"
+*ImageableArea A4/A4: "12 12 583 830"
+*ImageableArea A5/A5: "12 12 408 583"
+*ImageableArea A6/A6: "12 12 285 407"
+*ImageableArea Executive/Executive: "12 12 510 744"
+*ImageableArea Folio/Folio: "12 12 583 923"
+*ImageableArea Statement/Statement: "12 12 384 600"
+*ImageableArea Env10/Envelope 10: "12 12 294 672"
+*ImageableArea EnvDL/Envelope DL: "12 12 310 612"
+*ImageableArea EnvC5/Envelope C5: "12 12 456 637"
+
+*DefaultPaperDimension: A4
+*PaperDimension Letter/US Letter: "612 792"
+*PaperDimension Legal/US Legal: "612 1008"
+*PaperDimension Oficio/Oficio (Mexico): "612 965"
+*PaperDimension B4/B4 (JIS): "729 1032"
+*PaperDimension B5/B5 (JIS): "516 729"
+*PaperDimension A3/A3: "842 1191"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension A5/A5: "420 595"
+*PaperDimension A6/A6: "297 419"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension Folio/Folio: "595 935"
+*PaperDimension Statement/Statement: "396 612"
+*PaperDimension Env10/Envelope #10: "297 684"
+*PaperDimension EnvDL/Envelope DL: "312 624"
+*PaperDimension EnvC5/Envelope C5: "459 649"
+
+*VariablePaperSize: True
+*MaxMediaWidth: 100000
+*MaxMediaHeight: 100000
+*NonUIOrderDependency: 100 AnySetup *CustomPageSize
+*CustomPageSize True: "pop pop pop pop pop
+%% FoomaticRIPOptionSetting: PageSize=Custom"
+*End
+*FoomaticRIPOptionSetting PageSize=Custom: ""
+*End
+*ParamCustomPageSize Width: 1 points 36 100000
+*ParamCustomPageSize Height: 2 points 36 100000
+*ParamCustomPageSize Orientation: 3 int 0 0
+*ParamCustomPageSize WidthOffset: 4 points 0 0
+*ParamCustomPageSize HeightOffset: 5 points 0 0
+
+*OpenUI *InputSlot/Media Source: PickOne
+*DefaultInputSlot: Default
+*InputSlot Default/Printer Setting: ""
+*InputSlot AutoSelect/AutoSelect: ""
+*InputSlot MultiPurposeTray/MultiPurposeTray: ""
+*InputSlot UpperCassette/Tray1: ""
+*InputSlot LowerCassette/Tray2: ""
+*InputSlot ThirdCassette/Tray3: ""
+*InputSlot Tray4/Tray4: ""
+*InputSlot Tray5/Tray5: ""
+*CloseUI: *InputSlot
+*OpenUI *MediaType/Media Type: PickOne
+
+*DefaultMediaType: Plain
+*MediaType Plain/Plain Paper: ""
+*MediaType Labels/Labels: ""
+*MediaType Heavy/Heavy paper: ""
+*MediaType Light/Light paper: ""
+*MediaType Bond/Bond: ""
+*MediaType Recycled: ""
+*MediaType Card/Card stock: ""
+*MediaType Glossy: ""
+*CloseUI: *MediaType
+
+*OpenUI *Duplex/Double-Sided Printing: PickOne
+*DefaultDuplex: None
+*Duplex DuplexNoTumble/On (Flip on Long Edge): ""
+*Duplex DuplexTumble/On (Flip on Short Edge): ""
+*Duplex None/Off: ""
+*CloseUI: *Duplex
+*%CloseGroup: General
+
+*%OpenGroup: PrintoutMode/Printout Mode
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 15 JCLSetup *ColorModel
+*DefaultColorModel: RGB
+*ColorModel RGB/Color: "@PJL SET LCOLORMODEL=CMYK<0D><0A>@PJL SET LCOLORCORRECTION=MANUAL<0D><0A>@PJL SET LMANUALCOLORRGBGRAPHICS=DISPLAYREALBLACK<0D><0A>@PJL SET LMANUALCOLORRGBIMAGE=DISPLAYREALBLACK<0D><0A>"
+*ColorModel Grayscale/Monochrome: "@PJL SET LCOLORMODEL=BLACK<0D><0A>"
+*CloseUI: *ColorModel
+
+*OpenUI *PrinterResolution/Resolution: PickOne
+*DefaultPrinterResolution: 600x600dpi
+*PrinterResolution 600x600dpi/600x600 DPI: ""
+*PrinterResolution 1200x1200dpi/1200x1200 DPI: ""
+*CloseUI: *PrinterResolution
+
+*OpenUI *Density/Density: PickOne
+*DefaultDensity: PrintSetting
+*OrderDependency: 20 JCLSetup Density
+*Density PrintSetting/PrintSetting: ""
+*Density TonerSave/Toner Save: "@PJL SET LCOLORSAVER=ON<0D><0A>@PJL SET ECONOMODE=ON<0D><0A>"
+*Density Lightest/Lightest: "@PJL SET DENSITY=1<0D><0A>"
+*Density Lighter/Lighter: "@PJL SET DENSITY=2<0D><0A>"
+*Density Normal/Normal: "@PJL SET DENSITY=3<0D><0A>"
+*Density Darker/Darker: "@PJL SET DENSITY=4<0D><0A>"
+*Density Darkest/Darkest: "@PJL SET DENSITY=5<0D><0A>"
+*CloseUI: *Density
+
+*OpenUI *PrintMode/Normal Mode: PickOne
+*OrderDependency: 15 AnySetup *PrintMode
+*DefaultPrintMode: NormalMode
+*PrintMode NormalMode/Normal Mode: ""
+*PrintMode ImageMode/Image Mode: ""
+*CloseUI: *PrintMode
+
+*OpenUI *Collate/Collate: Boolean
+*DefaultCollate: False
+*Collate False/Off: ""
+*Collate True/On: ""
+*?Collate: "
+  save
+    currentpagedevice /Collate get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *Collate
+
+*OpenUI *Scale/Scale: PickOne
+*OrderDependency: 15 AnySetup *Scale
+*DefaultScale: 1.00
+*Scale 0.25/25%: ""
+*Scale 0.50/50%: ""
+*Scale 1.00/100%: ""
+*Scale 1.10/110%: ""
+*Scale 1.20/120%: ""
+*Scale 1.30/130%: ""
+*Scale 1.40/140%: ""
+*Scale 1.50/150%: ""
+*Scale 2.00/200%: ""
+*Scale 3.00/300%: ""
+*Scale 4.00/400%: ""
+*CloseUI: *Scale
+
+*OpenUI *SkipBlankPage/SkipBlankPage: PickOne
+*OrderDependency: 40 AnySetup *SkipBlankPage
+*DefaultSkipBlankPage: False
+*SkipBlankPage True/Yes: ""
+*SkipBlankPage False/No: ""
+*CloseUI: *SkipBlankPage
+
+*OpenUI *Poster/Poster: PickOne
+*OrderDependency: 15 AnySetup *Poster
+*DefaultPoster: off
+*Poster off/off: ""
+*Poster 2/2X2: ""
+*Poster 3/3X3: ""
+*Poster 4/4X4: ""
+*CloseUI: *Poster
+*%CloseGroup: PrintoutMode
+
+*%OpenGroup: Finishing/Finishing
+*OpenUI *OutputBins/Output Bins: PickOne
+*OrderDependency: 56 JCLSetup *OutputBins
+*DefaultOutputBins: PrinterS
+*OutputBins PrinterS/Printer Setting: ""
+*OutputBins StandardBin/Standard Bin: "@PJL SET OUTBIN=UPPER<0D><0A>"
+*OutputBins Bin1/Bin1: "@PJL SET OUTBIN=OPTIONALOUTBIN1<0D><0A>"
+*OutputBins Bin2/Bin2: "@PJL SET OUTBIN=OPTIONALOUTBIN2<0D><0A>"
+*OutputBins Bin3/Bin3: "@PJL SET OUTBIN=OPTIONALOUTBIN3<0D><0A>"
+*CloseUI: *OutputBins
+
+*OpenUI *HolePunch/Hole Punch: PickOne
+*OrderDependency: 54 JCLSetup *HolePunch
+*DefaultHolePunch: FalseM
+*HolePunch PrinterS/Printer Setting: ""
+*HolePunch FalseM/Off: "@PJL SET LPUNCH=OFF<0D><0A>"
+*HolePunch 2Hole/2 Hole: "@PJL SET LPUNCH=ON<0D><0A>@PJL SET LHOLEPUNCHMODE=2HOLE<0D><0A>"
+*HolePunch 4Hole/4 Hole: "@PJL SET LPUNCH=ON<0D><0A>@PJL SET LHOLEPUNCHMODE=4HOLE<0D><0A>"
+*CloseUI: *HolePunch
+
+*OpenUI *StapleJob/Staple Job: PickOne
+*OrderDependency: 170 JCLSetup *StapleJob
+*DefaultStapleJob: FalseM
+*StapleJob PrinterS/Printer Setting: ""
+*StapleJob FalseM/Off: "@PJL SET LSTAPLE=OFF<0D><0A>"
+*StapleJob Left: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=LEFT<0D><0A>"
+*StapleJob Top: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=TOP<0D><0A>"
+*StapleJob Bottom: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=BOTTOM<0D><0A>"
+*StapleJob Right: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=RIGHT<0D><0A>"
+*StapleJob LeftDual: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=LEFTDUAL<0D><0A>"
+*StapleJob RightDual: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=RIGHTDUAL<0D><0A>"
+*StapleJob TopDual: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=TOPDUAL<0D><0A>"
+*StapleJob BottomDual: "@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=BOTTOMDUAL<0D><0A>"
+*CloseUI: *StapleJob
+
+*OpenUI *Offset/Offset Pages: PickOne
+*OrderDependency: 60 JCLSetup *Offset
+*DefaultOffset: PrinterS
+*Offset PrinterS/Printer Setting: ""
+*Offset ON/ON: "@PJL SET JOBOFFSET=ON<0D><0A>"
+*Offset OFF/OFF: "@PJL SET JOBOFFSET=OFF<0D><0A>"
+*CloseUI: *Offset
+
+*OpenUI *SepPages/Separator Pages: PickOne
+*OrderDependency: 51 JCLSetup *SepPages
+*DefaultSepPages: PrinterS
+*SepPages PrinterS/Printer Setting: ""
+*SepPages NoneF/None: "@PJL SET LSEPARATORSHEETS=NONE<0D><0A>"
+*SepPages Jobs/Between Jobs: "@PJL SET LSEPARATORSHEETS=BETWEENJOBS<0D><0A>"
+*SepPages Copies/Between Copies: "@PJL SET LSEPARATORSHEETS=BETWEENCOPIES<0D><0A>"
+*SepPages Pages/Between Pages: "@PJL SET LSEPARATORSHEETS=BETWEENPAGES<0D><0A>"
+*CloseUI: *SepPages
+
+*OpenUI *SepSource/Separator Source: PickOne
+*OrderDependency: 52 JCLSetup *SepSource
+*DefaultSepSource: PrinterS
+*SepSource PrinterS/Printer Setting: ""
+*SepSource Tray1/Tray 1: "@PJL SET LSEPARATORSOURCE=TRAY1<0D><0A>"
+*SepSource Tray2/Tray 2: "@PJL SET LSEPARATORSOURCE=TRAY2<0D><0A>"
+*SepSource Tray3/Tray 3: "@PJL SET LSEPARATORSOURCE=TRAY3<0D><0A>"
+*SepSource Tray4/Tray 4: "@PJL SET LSEPARATORSOURCE=TRAY4<0D><0A>"
+*SepSource Tray5/Tray 5: "@PJL SET LSEPARATORSOURCE=TRAY5<0D><0A>"
+*SepSource MultipurposeFeeder/Multipurpose Feeder: "@PJL SET LSEPARATORSOURCE=MPFEEDER<0D><0A>"
+*CloseUI: *SepSource
+
+*% ================================================
+*% Booklet
+*% ================================================
+*% Booklet printing is not allowed without Auto Duplex turned on
+*OpenUI *Booklet/Format Output as Booklet: PickOne
+*OrderDependency: 60 AnySetup *Booklet
+*DefaultBooklet: False
+*Booklet True/Yes: ""
+*Booklet False/No: ""
+*CloseUI: *Booklet
+
+*% ================================================
+*% PamphletPageSize
+*% ================================================
+*OpenUI *PamphletPageSize/PamphletPageSize: Boolean
+*OrderDependency: 50 JCLSetup *OutputBins
+*DefaultPamphletPageSize: False
+*PamphletPageSize False/Off: ""
+*PamphletPageSize True/On: ""
+*?PamphletPageSize: "
+  save
+    currentpagedevice /PamphletPageSize get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *PamphletPageSize
+
+*OpenUI *Fold/Fold: PickOne
+*OrderDependency: 172 JCLSetup *Fold
+*DefaultFold: PrinterS
+*Fold PrinterS/Printer Setting: ""
+*Fold False/Off: "@PJL SET LFOLD=OFF<0D><0A>"
+*Fold OnlyFold/Fold: "@PJL SET LFOLD=BOOKLET<0D><0A>"
+*Fold SaddleStitch/Fold and Staple: "@PJL SET LFOLD=BOOKLET<0D><0A>@PJL SET LSTAPLE=ON<0D><0A>@PJL SET LSTAPLE=DUAL<0D><0A>"
+*Fold BiFold/Fold Each Sheet Individually: "@PJL SET LFOLD=BIFOLD<0D><0A>"
+*Fold TriFold/Trifold Individual Pages: "@PJL SET LFOLD=TRIFOLD<0D><0A>"
+*CloseUI: *Fold
+*%CloseGroup: Finishing
+*CloseGroup: General
+
+*OpenGroup: InstallableOptions/Installable Options
+*OpenUI *Trays/Trays: PickOne
+*OrderDependency: 0 AnySetup *Trays
+*DefaultTrays: Tray12
+*Trays Tray12/Tray 1+2: ""
+*Trays Tray123/Tray 1+2+3: ""
+*Trays Tray1234/Tray 1+2+3+4: ""
+*Trays Tray12345/Tray 1+2+3+4+5: ""
+*CloseUI: *Trays
+
+*OpenUI *OptOutputBins/Output Bins: PickOne
+*OrderDependency: 0 AnySetup *OptOutputBins
+*DefaultOptOutputBins: StandardBin
+*OptOutputBins StandardBin/Standard Bin: ""
+*OptOutputBins OBin1/1 Optional Bin: ""
+*OptOutputBins OBin2/2 Optional Bins: ""
+*OptOutputBins OBin3/3 Optional Bins: ""
+*CloseUI: *OptOutputBins
+
+*OpenUI *OptDuplex/Duplexer: PickOne
+*OrderDependency: 0 AnySetup *OptDuplex
+*DefaultOptDuplex: InstalledM
+*OptDuplex NotInstalledM/Not Installed: ""
+*OptDuplex InstalledM/Installed: ""
+*CloseUI: *OptDuplex
+
+*OpenUI *OutputFinisher/Output Finisher: PickOne
+*OrderDependency: 0 AnySetup *OutputFinisher
+*DefaultOutputFinisher: NotInstalledM
+*OutputFinisher NotInstalledM/Not Installed: ""
+*OutputFinisher StandardFinisher/Standard Finisher: ""
+*CloseUI: *OutputFinisher
+*CloseGroup: InstallableOptions
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*zh_CN.Translation General/常规:""
+*zh_CN.Translation PageSize/介质尺寸: ""
+*zh_CN.Translation InstallableOptions/可安装的选项: ""
+*zh_CN.Translation Trays/进纸匣配置: ""
+*zh_CN.PageSize Letter/信纸: ""
+*zh_CN.PageSize Legal/标准法律用纸: ""
+*zh_CN.PageSize Oficio/Oficio（墨西哥）: ""
+*zh_CN.PageSize B4/JIS B4: ""
+*zh_CN.PageSize B5/JIS B5: ""
+*zh_CN.CustomPageSize True/自定义: ""
+*zh_CN.PageSize A3/A3: ""
+*zh_CN.PageSize A4/A4: ""
+*zh_CN.PageSize A5/A5: ""
+*zh_CN.PageSize A6/A6: ""
+*zh_CN.PageSize Executive/实用纸张: ""
+*zh_CN.PageSize Folio/对开纸: ""
+*zh_CN.PageSize Statement/报表: ""
+*zh_CN.PageSize EnvMonarch/7 3/4 信封: ""
+*zh_CN.PageSize Env9/9信封: ""
+*zh_CN.PageSize Env10/10信封: ""
+*zh_CN.PageSize EnvDL/DL 信封: ""
+*zh_CN.PageSize EnvC5/C5 信封: ""
+*zh_CN.PageSize ISOB5/B5 信封: ""
+*zh_CN.Translation PageRegion/页面区域 : ""
+*zh_CN.PageRegion Letter/信纸: ""
+*zh_CN.PageRegion Legal/标准法律用纸: ""
+*zh_CN.PageRegion Oficio/Oficio（墨西哥）: ""
+*zh_CN.PageRegion B4/JIS B4: ""
+*zh_CN.PageRegion B5/JIS B5: ""
+*zh_CN.PageRegion Custom/自定义: ""
+*zh_CN.PageRegion A3/A3: ""
+*zh_CN.PageRegion A4/A4: ""
+*zh_CN.PageRegion A5/A5: ""
+*zh_CN.PageRegion A6/A6: ""
+*zh_CN.PageRegion Executive/实用纸张: ""
+*zh_CN.PageRegion Folio/对开纸: ""
+*zh_CN.PageRegion Statement/报表: ""
+*zh_CN.PageRegion EnvMonarch/7 3/4 信封: ""
+*zh_CN.PageRegion Env9/9信封: ""
+*zh_CN.PageRegion Env10/10信封: ""
+*zh_CN.PageRegion EnvDL/DL 信封: ""
+*zh_CN.PageRegion EnvC5/C5 信封: ""
+*zh_CN.PageRegion ISOB5/B5 信封: ""
+*zh_CN.Translation InputSlot/介质来源: ""
+*zh_CN.InputSlot Default/打印机设置: ""
+*zh_CN.InputSlot AutoSelect/自动选择: ""
+*zh_CN.InputSlot ManualFeed/手动进纸器: ""
+*zh_CN.InputSlot MultiPurposeTray/多功能进纸器: ""
+*zh_CN.InputSlot UpperCassette/进纸匣1: ""
+*zh_CN.InputSlot LowerCassette/进纸匣2: ""
+*zh_CN.InputSlot EnvelopeTray/手动信封: ""
+*zh_CN.InputSlot ThirdCassette/进纸匣3: ""
+*zh_CN.InputSlot Tray4/进纸匣4: ""
+*zh_CN.InputSlot Tray5/进纸匣5: ""
+*zh_CN.InputSlot MultipurposeFeeder/多功能进纸器: ""
+*zh_CN.InputSlot ManualPaper/手动纸张: ""
+*zh_CN.InputSlot ManualEnv/手动信封: ""
+*zh_CN.InputSlot BypassTray/手动纸张: ""
+*zh_CN.Translation PrintoutMode/质量: ""
+*zh_CN.PrintoutMode Draft/红黑600dpi: ""
+*zh_CN.PrintoutMode Draft.Gray/黑白600dpi: ""
+*zh_CN.PrintoutMode Normal/红黑2400图像质量: ""
+*zh_CN.PrintoutMode Normal.Gray/黑白2400图像质量: ""
+*zh_CN.PrintoutMode High/红黑1200dpi: ""
+*zh_CN.PrintoutMode High.Gray/黑白1200dpi: ""
+*zh_CN.Translation ColorModel/颜色样式: ""
+*zh_CN.ColorModel FromPrintoutMode/打印机设置: ""
+*zh_CN.ColorModel RGB/彩色打印: ""
+*zh_CN.ColorModel Grayscale/黑白打印: ""
+*zh_CN.Translation PrinterResolution/分辨率: ""
+*zh_CN.PrinterResolution FromPrintoutMode/打印机设置: ""
+*zh_CN.PrinterResolution 300x300dpi/300dpi: ""
+*zh_CN.PrinterResolution 600x600dpi/600dpi: ""
+*zh_CN.PrinterResolution 1200x600dpi/4800图像质量: ""
+*zh_CN.PrinterResolution 1200x1200dpi/1200dpi: ""
+*zh_CN.Translation Collate/逐份: ""
+*zh_CN.Collate False/关闭: ""
+*zh_CN.Collate True/开启: ""
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex DuplexNoTumble/双面长边: ""
+*zh_CN.Duplex DuplexTumble/双面短边: ""
+*zh_CN.Duplex None/无: ""
+*zh_CN.Translation MediaType/介质类型: ""
+*zh_CN.MediaType Plain/普通纸: ""
+*zh_CN.MediaType Labels/标签纸: ""
+*zh_CN.MediaType Bond/铜板纸: ""
+*zh_CN.MediaType Heavy/重磅纸: ""
+*zh_CN.MediaType Light/轻质纸张: ""
+*zh_CN.MediaType Recycled/再生纸: ""
+*zh_CN.MediaType Card/卡片纸: ""
+*zh_CN.MediaType Glossy/光面纸: ""
+*zh_CN.Translation Finishing/输出: ""
+*zh_CN.Translation SepPages/分隔页: ""
+*zh_CN.SepPages PrinterS/打印机设置: ""
+*zh_CN.SepPages NoneF/无: ""
+*zh_CN.SepPages Jobs/作业之间: ""
+*zh_CN.SepPages Copies/副本之间: ""
+*zh_CN.SepPages Pages/页面之间: ""
+*zh_CN.Translation HolePunch/打孔: ""
+*zh_CN.HolePunch PrinterS/打印机设置: ""
+*zh_CN.HolePunch FalseM/关: ""
+*zh_CN.HolePunch 2Hole/2 孔: ""
+*zh_CN.HolePunch 4Hole/4 孔: ""
+*zh_CN.Translation StapleJob/装订作业: ""
+*zh_CN.StapleJob PrinterS/打印机设置: ""
+*zh_CN.StapleJob FalseM/关: ""
+*zh_CN.StapleJob Left/左上角: ""
+*zh_CN.StapleJob Top/右上角: ""
+*zh_CN.StapleJob Bottom/左下角: ""
+*zh_CN.StapleJob Right/右下角: ""
+*zh_CN.StapleJob LeftDual/左边双订: ""
+*zh_CN.StapleJob RightDual/右边双订: ""
+*zh_CN.StapleJob TopDual/顶部双订: ""
+*zh_CN.StapleJob BottomDual/底部双订: ""
+*zh_CN.Translation Fold/折叠: ""
+*zh_CN.Fold PrinterS/打印机设置: ""
+*zh_CN.Fold False/关: ""
+*zh_CN.Fold OnlyFold/折叠: ""
+*zh_CN.Fold SaddleStitch/折叠并居中装订: ""
+*zh_CN.Fold BiFold/折叠单独页面: ""
+*zh_CN.Fold TriFold/三折单独页面: ""
+*zh_CN.Translation Offset/偏移页: ""
+*zh_CN.Offset PrinterS/打印机设置: ""
+*zh_CN.Offset ON/开: ""
+*zh_CN.Offset OFF/关: ""
+*zh_CN.Translation SepSource/分隔纸源: ""
+*zh_CN.SepSource PrinterS/打印机设置: ""
+*zh_CN.SepSource Tray1/进纸匣 1: ""
+*zh_CN.SepSource Tray2/进纸匣 2: ""
+*zh_CN.SepSource Tray3/进纸匣 3: ""
+*zh_CN.SepSource Tray4/进纸匣 4: ""
+*zh_CN.SepSource Tray5/进纸匣 5: ""
+*zh_CN.SepSource MultipurposeFeeder/多功能进纸器: ""
+*zh_CN.Trays Tray12/进纸匣 1+2: ""
+*zh_CN.Trays Tray123/进纸匣 1+2+3: ""
+*zh_CN.Trays Tray1234/进纸匣 1+2+3+4: ""
+*zh_CN.Trays Tray12345/进纸匣 1+2+3+4+5: ""
+*zh_CN.Translation OptOutputBins/接纸架配置: ""
+*zh_CN.OptOutputBins StandardBin/标准接纸架: ""
+*zh_CN.OptOutputBins OBin1/1 个接纸架选件: ""
+*zh_CN.OptOutputBins OBin2/2 个接纸架选件: ""
+*zh_CN.OptOutputBins OBin3/3 个接纸架选件: ""
+*zh_CN.Translation OutputBins/接纸架: ""
+*zh_CN.OutputBins PrinterS/打印机设置: ""
+*zh_CN.OutputBins StandardBin/标准接纸架: ""
+*zh_CN.OutputBins Bin1/接纸架1: ""
+*zh_CN.OutputBins Bin2/接纸架2: ""
+*zh_CN.OutputBins Bin3/接纸架3: ""
+*zh_CN.Translation OptDuplex/双面打印部件: ""
+*zh_CN.OptDuplex InstalledM/已安装: ""
+*zh_CN.OptDuplex NotInstalledM/未安装: ""
+*zh_CN.Translation OutputFinisher/装订器配置: ""
+*zh_CN.OutputFinisher NotInstalledM/未安装: ""
+*zh_CN.OutputFinisher StandardFinisher/已安装: ""
+*zh_CN.Translation Booklet/小册子: ""
+*zh_CN.Booklet True/开: ""
+*zh_CN.Booklet False/关: ""
+*zh_CN.Translation Density/浓度: ""
+*zh_CN.Density PrintSetting/打印机设置: ""
+*zh_CN.Density TonerSave/省墨: ""
+*zh_CN.Density Lightest/最淡: ""
+*zh_CN.Density Lighter/较淡: ""
+*zh_CN.Density Normal/正常: ""
+*zh_CN.Density Darker/较浓: ""
+*zh_CN.Density Darkest/最浓: ""
+*zh_CN.Translation PamphletPageSize/在小册子页面上维持原始页面尺寸: ""
+*zh_CN.PamphletPageSize False/关闭: ""
+*zh_CN.PamphletPageSize True/开启: ""
+*zh_CN.Translation PrintMode/打印模式: ""
+*zh_CN.PrintMode NormalMode/常规模式: ""
+*zh_CN.PrintMode ImageMode/图像模式: ""
+*zh_CN.Translation Scale/缩放比: ""
+*zh_CN.Scale 0.25/25%: ""
+*zh_CN.Scale 0.50/50%: ""
+*zh_CN.Scale 1.00/100%: ""
+*zh_CN.Scale 1.10/110%: ""
+*zh_CN.Scale 1.20/120%: ""
+*zh_CN.Scale 1.30/130%: ""
+*zh_CN.Scale 1.40/140%: ""
+*zh_CN.Scale 1.50/150%: ""
+*zh_CN.Scale 2.00/200%: ""
+*zh_CN.Scale 3.00/300%: ""
+*zh_CN.Scale 4.00/400%: ""
+
+*zh_CN.Translation SkipBlankPage/跳过空白页: ""
+*zh_CN.SkipBlankPage True/开启: ""
+*zh_CN.SkipBlankPage False/关闭: ""
+
+*zh_CN.Translation OutputPageSize/输出尺寸: ""
+*zh_CN.OutputPageSize True/开启: ""
+*zh_CN.OutputPageSize False/关闭: ""
+
+*zh_CN.Translation Poster/海报打印: ""
+*zh_CN.Poster off/关闭: ""
+*zh_CN.Poster 2/2x2: ""
+*zh_CN.Poster 3/3x3: ""
+*zh_CN.Poster 4/4x4: ""

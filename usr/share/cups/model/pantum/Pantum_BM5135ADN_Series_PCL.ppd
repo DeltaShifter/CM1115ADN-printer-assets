@@ -1,0 +1,1715 @@
+*PPD-Adobe: "4.3"
+*%
+*% For information on using this, and to obtain the required backend
+*% script, consult http://www.openprinting.org/
+*%
+*% This file is published under the GNU General Public License
+*%
+*% PPD-O-MATIC (4.0.0 or newer) generated this PPD file. It is for use with 
+*% all programs and environments which use PPD files for dealing with
+*% printer capability information. The printer must be configured with the
+*% "foomatic-rip" backend filter script of Foomatic 4.0.0 or newer. This 
+*% file and "foomatic-rip" work together to support PPD-controlled printer
+*% driver option access with all supported printer drivers and printing
+*% spoolers.
+*%
+*% To save this file on your disk, wait until the download has completed
+*% (the animation of the browser logo must stop) and then use the
+*% "Save as..." command in the "File" menu of your browser or in the 
+*% pop-up manu when you click on this document with the right mouse button.
+*% DO NOT cut and paste this file into an editor with your mouse. This can
+*% introduce additional line breaks which lead to unexpected results.
+*%
+*% You may save this file as 'Generic-PCL_6_PCL_XL_Printer-pxlcolor.ppd'
+*%
+*%
+*FormatVersion:	"4.3"
+*FileVersion:	"1.1"
+*LanguageVersion: English 
+*LanguageEncoding: utf-8
+*PCFileName:	"BM5135ADN.PPD"
+*Manufacturer:	"Pantum"
+*Product:	"(Pantum BM5135ADN series)"
+*cupsVersion:	1.0
+*cupsManualCopies: False
+*cupsModelNumber:  2
+*cupsFilter:    "application/vnd.pantumprint-pdf 21 pantumprint-pdftopcl"
+*cupsFilter2:	"application/vnd.pantumprint-pdf application/vnd.cups-raw 21 pantumprint-pdftopcl"
+*cupsFilter:    "application/vnd.cups-command 0 pantumprint-commandtodev"
+*cupsFilter2:	"application/vnd.cups-command application/vnd.cups-raw 0 pantumprint-commandtodev"
+*%cupsPreFilter: "application/pdf 100 pantumprint-pdftopdf"
+*%pprRIP:        foomatic-rip other
+*ModelName:     "Pantum BM5135ADN series"
+*NickName:      "Pantum BM5135ADN Series PCL"
+*ShortNickName: "BM5135ADN Series PCL"
+*PSVersion:	"(3010.000) 550"
+*PSVersion:	"(3010.000) 651"
+*PSVersion:	"(3010.000) 652"
+*PSVersion:	"(3010.000) 653"
+*PSVersion:	"(3010.000) 704"
+*PSVersion:	"(3010.000) 705"
+*PSVersion:	"(3010.000) 800"
+*PSVersion:	"(3010.000) 815"
+*PSVersion:	"(3010.000) 850"
+*PSVersion:	"(3010.000) 860"
+*PSVersion:	"(3010.000) 861"
+*PSVersion:	"(3010.000) 862"
+*PSVersion:	"(3010.000) 863"
+*PSVersion:	"(3010.000) 864"
+*PSVersion:	"(3010.000) 870"
+*LanguageLevel:	"3"
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*FileSystem:	False
+*Throughput:	"1"
+*LandscapeOrientation: Plus90
+*TTRasterizer:	Type42
+*cupsCommands:  "ReprotLevels"
+*1284DeviceID: "MFG:Pantum;MDL:BM5135ADN series;"
+*cupsSNMPSupplies: False
+*cupsIPPSupplies: False
+*LongEdgeFeedSupport: "A5"
+*SupportPaperString: True
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard              *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch            *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvDL                 *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC5                 *InputSlot AutoFeed
+*UIConstraints: *PageSize Env10         	*InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC6                 *InputSlot AutoFeed
+*UIConstraints: *PageSize ZL                    *InputSlot AutoFeed
+*UIConstraints: *PageSize Yougata4              *InputSlot AutoFeed
+*UIConstraints: *PageSize DoublePostcardRotated *InputSlot AutoFeed
+*UIConstraints: *PageSize Younaga3              *InputSlot AutoFeed
+*UIConstraints: *PageSize Nagagata3             *InputSlot AutoFeed
+*UIConstraints: *PageSize Yougata2              *InputSlot AutoFeed
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot AutoFeed *PageSize Postcard
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *InputSlot AutoFeed *PageSize Env10
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *InputSlot AutoFeed *PageSize ZL
+*UIConstraints: *InputSlot AutoFeed *PageSize Yougata4
+*UIConstraints: *InputSlot AutoFeed *PageSize DoublePostcardRotated
+*UIConstraints: *InputSlot AutoFeed *PageSize Younaga3
+*UIConstraints: *InputSlot AutoFeed *PageSize Nagagata3
+*UIConstraints: *InputSlot AutoFeed *PageSize Yougata2
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard              *InputSlot OptTray1
+*UIConstraints: *PageSize EnvMonarch            *InputSlot OptTray1
+*UIConstraints: *PageSize EnvDL                 *InputSlot OptTray1
+*UIConstraints: *PageSize EnvC5                 *InputSlot OptTray1
+*UIConstraints: *PageSize Env10         	*InputSlot OptTray1
+*UIConstraints: *PageSize EnvC6                 *InputSlot OptTray1
+*UIConstraints: *PageSize ZL                    *InputSlot OptTray1
+*UIConstraints: *PageSize Yougata4              *InputSlot OptTray1
+*UIConstraints: *PageSize DoublePostcardRotated *InputSlot OptTray1
+*UIConstraints: *PageSize Younaga3              *InputSlot OptTray1
+*UIConstraints: *PageSize Nagagata3             *InputSlot OptTray1
+*UIConstraints: *PageSize Yougata2              *InputSlot OptTray1
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot OptTray1 *PageSize Postcard
+*UIConstraints: *InputSlot OptTray1 *PageSize EnvMonarch
+*UIConstraints: *InputSlot OptTray1 *PageSize EnvDL
+*UIConstraints: *InputSlot OptTray1 *PageSize EnvC5
+*UIConstraints: *InputSlot OptTray1 *PageSize Env10
+*UIConstraints: *InputSlot OptTray1 *PageSize EnvC6
+*UIConstraints: *InputSlot OptTray1 *PageSize ZL
+*UIConstraints: *InputSlot OptTray1 *PageSize Yougata4
+*UIConstraints: *InputSlot OptTray1 *PageSize DoublePostcardRotated
+*UIConstraints: *InputSlot OptTray1 *PageSize Younaga3
+*UIConstraints: *InputSlot OptTray1 *PageSize Nagagata3
+*UIConstraints: *InputSlot OptTray1 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard              *InputSlot OptTray2
+*UIConstraints: *PageSize EnvMonarch            *InputSlot OptTray2
+*UIConstraints: *PageSize EnvDL                 *InputSlot OptTray2
+*UIConstraints: *PageSize EnvC5                 *InputSlot OptTray2
+*UIConstraints: *PageSize Env10         	*InputSlot OptTray2
+*UIConstraints: *PageSize EnvC6                 *InputSlot OptTray2
+*UIConstraints: *PageSize ZL                    *InputSlot OptTray2
+*UIConstraints: *PageSize Yougata4              *InputSlot OptTray2
+*UIConstraints: *PageSize DoublePostcardRotated *InputSlot OptTray2
+*UIConstraints: *PageSize Younaga3              *InputSlot OptTray2
+*UIConstraints: *PageSize Nagagata3             *InputSlot OptTray2
+*UIConstraints: *PageSize Yougata2              *InputSlot OptTray2
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot OptTray2 *PageSize Postcard
+*UIConstraints: *InputSlot OptTray2 *PageSize EnvMonarch
+*UIConstraints: *InputSlot OptTray2 *PageSize EnvDL
+*UIConstraints: *InputSlot OptTray2 *PageSize EnvC5
+*UIConstraints: *InputSlot OptTray2 *PageSize Env10
+*UIConstraints: *InputSlot OptTray2 *PageSize EnvC6
+*UIConstraints: *InputSlot OptTray2 *PageSize ZL
+*UIConstraints: *InputSlot OptTray2 *PageSize Yougata4
+*UIConstraints: *InputSlot OptTray2 *PageSize DoublePostcardRotated
+*UIConstraints: *InputSlot OptTray2 *PageSize Younaga3
+*UIConstraints: *InputSlot OptTray2 *PageSize Nagagata3
+*UIConstraints: *InputSlot OptTray2 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard              *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvMonarch            *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvDL                 *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvC5                 *InputSlot AutoSelect
+*UIConstraints: *PageSize Env10         	*InputSlot AutoSelect
+*UIConstraints: *PageSize EnvC6                 *InputSlot AutoSelect
+*UIConstraints: *PageSize ZL                    *InputSlot AutoSelect
+*UIConstraints: *PageSize Yougata4              *InputSlot AutoSelect
+*UIConstraints: *PageSize DoublePostcardRotated *InputSlot AutoSelect
+*UIConstraints: *PageSize Younaga3              *InputSlot AutoSelect
+*UIConstraints: *PageSize Nagagata3             *InputSlot AutoSelect
+*UIConstraints: *PageSize Yougata2              *InputSlot AutoSelect
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot AutoSelect *PageSize Postcard
+*UIConstraints: *InputSlot AutoSelect *PageSize EnvMonarch
+*UIConstraints: *InputSlot AutoSelect *PageSize EnvDL
+*UIConstraints: *InputSlot AutoSelect *PageSize EnvC5
+*UIConstraints: *InputSlot AutoSelect *PageSize Env10
+*UIConstraints: *InputSlot AutoSelect *PageSize EnvC6
+*UIConstraints: *InputSlot AutoSelect *PageSize ZL
+*UIConstraints: *InputSlot AutoSelect *PageSize Yougata4
+*UIConstraints: *InputSlot AutoSelect *PageSize DoublePostcardRotated
+*UIConstraints: *InputSlot AutoSelect *PageSize Younaga3
+*UIConstraints: *InputSlot AutoSelect *PageSize Nagagata3
+*UIConstraints: *InputSlot AutoSelect *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *FirstSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch            *FirstSlot AutoFeed
+*UIConstraints: *PageSize EnvDL                 *FirstSlot AutoFeed
+*UIConstraints: *PageSize EnvC5                 *FirstSlot AutoFeed
+*UIConstraints: *PageSize Env10         	  *FirstSlot AutoFeed
+*UIConstraints: *PageSize EnvC6                 *FirstSlot AutoFeed
+*UIConstraints: *PageSize ZL                    *FirstSlot AutoFeed
+*UIConstraints: *PageSize Yougata4              *FirstSlot AutoFeed
+*UIConstraints: *PageSize DoublePostcardRotated *FirstSlot AutoFeed
+*UIConstraints: *PageSize Younaga3              *FirstSlot AutoFeed
+*UIConstraints: *PageSize Nagagata3             *FirstSlot AutoFeed
+*UIConstraints: *PageSize Yougata2              *FirstSlot AutoFeed
+
+*% == Constraints (FirstSlot vs. PageSize) ==
+*UIConstraints: *FirstSlot AutoFeed *PageSize Postcard
+*UIConstraints: *FirstSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *FirstSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *FirstSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *FirstSlot AutoFeed *PageSize Env10
+*UIConstraints: *FirstSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *FirstSlot AutoFeed *PageSize ZL
+*UIConstraints: *FirstSlot AutoFeed *PageSize Yougata4
+*UIConstraints: *FirstSlot AutoFeed *PageSize DoublePostcardRotated
+*UIConstraints: *FirstSlot AutoFeed *PageSize Younaga3
+*UIConstraints: *FirstSlot AutoFeed *PageSize Nagagata3
+*UIConstraints: *FirstSlot AutoFeed *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *FirstSlot OptTray1
+*UIConstraints: *PageSize EnvMonarch            *FirstSlot OptTray1
+*UIConstraints: *PageSize EnvDL                 *FirstSlot OptTray1
+*UIConstraints: *PageSize EnvC5                 *FirstSlot OptTray1
+*UIConstraints: *PageSize Env10         	  *FirstSlot OptTray1
+*UIConstraints: *PageSize EnvC6                 *FirstSlot OptTray1
+*UIConstraints: *PageSize ZL                    *FirstSlot OptTray1
+*UIConstraints: *PageSize Yougata4              *FirstSlot OptTray1
+*UIConstraints: *PageSize DoublePostcardRotated *FirstSlot OptTray1
+*UIConstraints: *PageSize Younaga3              *FirstSlot OptTray1
+*UIConstraints: *PageSize Nagagata3             *FirstSlot OptTray1
+*UIConstraints: *PageSize Yougata2              *FirstSlot OptTray1
+
+*% == Constraints (FirstSlot vs. PageSize) ==
+*UIConstraints: *FirstSlot OptTray1 *PageSize Postcard
+*UIConstraints: *FirstSlot OptTray1 *PageSize EnvMonarch
+*UIConstraints: *FirstSlot OptTray1 *PageSize EnvDL
+*UIConstraints: *FirstSlot OptTray1 *PageSize EnvC5
+*UIConstraints: *FirstSlot OptTray1 *PageSize Env10
+*UIConstraints: *FirstSlot OptTray1 *PageSize EnvC6
+*UIConstraints: *FirstSlot OptTray1 *PageSize ZL
+*UIConstraints: *FirstSlot OptTray1 *PageSize Yougata4
+*UIConstraints: *FirstSlot OptTray1 *PageSize DoublePostcardRotated
+*UIConstraints: *FirstSlot OptTray1 *PageSize Younaga3
+*UIConstraints: *FirstSlot OptTray1 *PageSize Nagagata3
+*UIConstraints: *FirstSlot OptTray1 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *FirstSlot OptTray2
+*UIConstraints: *PageSize EnvMonarch            *FirstSlot OptTray2
+*UIConstraints: *PageSize EnvDL                 *FirstSlot OptTray2
+*UIConstraints: *PageSize EnvC5                 *FirstSlot OptTray2
+*UIConstraints: *PageSize Env10         	  *FirstSlot OptTray2
+*UIConstraints: *PageSize EnvC6                 *FirstSlot OptTray2
+*UIConstraints: *PageSize ZL                    *FirstSlot OptTray2
+*UIConstraints: *PageSize Yougata4              *FirstSlot OptTray2
+*UIConstraints: *PageSize DoublePostcardRotated *FirstSlot OptTray2
+*UIConstraints: *PageSize Younaga3              *FirstSlot OptTray2
+*UIConstraints: *PageSize Nagagata3             *FirstSlot OptTray2
+*UIConstraints: *PageSize Yougata2              *FirstSlot OptTray2
+
+*% == Constraints (FirstSlot vs. PageSize) ==
+*UIConstraints: *FirstSlot OptTray2 *PageSize Postcard
+*UIConstraints: *FirstSlot OptTray2 *PageSize EnvMonarch
+*UIConstraints: *FirstSlot OptTray2 *PageSize EnvDL
+*UIConstraints: *FirstSlot OptTray2 *PageSize EnvC5
+*UIConstraints: *FirstSlot OptTray2 *PageSize Env10
+*UIConstraints: *FirstSlot OptTray2 *PageSize EnvC6
+*UIConstraints: *FirstSlot OptTray2 *PageSize ZL
+*UIConstraints: *FirstSlot OptTray2 *PageSize Yougata4
+*UIConstraints: *FirstSlot OptTray2 *PageSize DoublePostcardRotated
+*UIConstraints: *FirstSlot OptTray2 *PageSize Younaga3
+*UIConstraints: *FirstSlot OptTray2 *PageSize Nagagata3
+*UIConstraints: *FirstSlot OptTray2 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *FirstSlot AutoSelect
+*UIConstraints: *PageSize EnvMonarch            *FirstSlot AutoSelect
+*UIConstraints: *PageSize EnvDL                 *FirstSlot AutoSelect
+*UIConstraints: *PageSize EnvC5                 *FirstSlot AutoSelect
+*UIConstraints: *PageSize Env10         	 *FirstSlot AutoSelect
+*UIConstraints: *PageSize EnvC6                 *FirstSlot AutoSelect
+*UIConstraints: *PageSize ZL                    *FirstSlot AutoSelect
+*UIConstraints: *PageSize Yougata4              *FirstSlot AutoSelect
+*UIConstraints: *PageSize DoublePostcardRotated *FirstSlot AutoSelect
+*UIConstraints: *PageSize Younaga3              *FirstSlot AutoSelect
+*UIConstraints: *PageSize Nagagata3             *FirstSlot AutoSelect
+*UIConstraints: *PageSize Yougata2              *FirstSlot AutoSelect
+
+*% == Constraints (PFirstSlotvs. PageSize) ==
+*UIConstraints: *FirstSlot AutoSelect *PageSize Postcard
+*UIConstraints: *FirstSlot AutoSelect *PageSize EnvMonarch
+*UIConstraints: *FirstSlot AutoSelect *PageSize EnvDL
+*UIConstraints: *FirstSlot AutoSelect *PageSize EnvC5
+*UIConstraints: *FirstSlot AutoSelect *PageSize Env10
+*UIConstraints: *FirstSlot AutoSelect *PageSize EnvC6
+*UIConstraints: *FirstSlot AutoSelect *PageSize ZL
+*UIConstraints: *FirstSlot AutoSelect *PageSize Yougata4
+*UIConstraints: *FirstSlot AutoSelect *PageSize DoublePostcardRotated
+*UIConstraints: *FirstSlot AutoSelect *PageSize Younaga3
+*UIConstraints: *FirstSlot AutoSelect *PageSize Nagagata3
+*UIConstraints: *FirstSlot AutoSelect *PageSize Yougata2
+
+
+*% == Constraints (PageSize vs. CoverSlot) ==
+*UIConstraints: *PageSize Postcard              *CoverSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch            *CoverSlot AutoFeed
+*UIConstraints: *PageSize EnvDL                 *CoverSlot AutoFeed
+*UIConstraints: *PageSize EnvC5                 *CoverSlot AutoFeed
+*UIConstraints: *PageSize Env10         	  *CoverSlot AutoFeed
+*UIConstraints: *PageSize EnvC6                 *CoverSlot AutoFeed
+*UIConstraints: *PageSize ZL                    *CoverSlot AutoFeed
+*UIConstraints: *PageSize Yougata4              *CoverSlot AutoFeed
+*UIConstraints: *PageSize DoublePostcardRotated *CoverSlot AutoFeed
+*UIConstraints: *PageSize Younaga3              *CoverSlot AutoFeed
+*UIConstraints: *PageSize Nagagata3             *CoverSlot AutoFeed
+*UIConstraints: *PageSize Yougata2              *CoverSlot AutoFeed
+
+*% == Constraints (CoverSlot vs. PageSize) ==
+*UIConstraints: *CoverSlot AutoFeed *PageSize Postcard
+*UIConstraints: *CoverSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *CoverSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *CoverSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *CoverSlot AutoFeed *PageSize Env10
+*UIConstraints: *CoverSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *CoverSlot AutoFeed *PageSize ZL
+*UIConstraints: *CoverSlot AutoFeed *PageSize Yougata4
+*UIConstraints: *CoverSlot AutoFeed *PageSize DoublePostcardRotated
+*UIConstraints: *CoverSlot AutoFeed *PageSize Younaga3
+*UIConstraints: *CoverSlot AutoFeed *PageSize Nagagata3
+*UIConstraints: *CoverSlot AutoFeed *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *CoverSlot OptTray1
+*UIConstraints: *PageSize EnvMonarch            *CoverSlot OptTray1
+*UIConstraints: *PageSize EnvDL                 *CoverSlot OptTray1
+*UIConstraints: *PageSize EnvC5                 *CoverSlot OptTray1
+*UIConstraints: *PageSize Env10         	  *CoverSlot OptTray1
+*UIConstraints: *PageSize EnvC6                 *CoverSlot OptTray1
+*UIConstraints: *PageSize ZL                    *CoverSlot OptTray1
+*UIConstraints: *PageSize Yougata4              *CoverSlot OptTray1
+*UIConstraints: *PageSize DoublePostcardRotated *CoverSlot OptTray1
+*UIConstraints: *PageSize Younaga3              *CoverSlot OptTray1
+*UIConstraints: *PageSize Nagagata3             *CoverSlot OptTray1
+*UIConstraints: *PageSize Yougata2              *CoverSlot OptTray1
+
+*% == Constraints (FirstSlot vs. PageSize) ==
+*UIConstraints: *CoverSlot OptTray1 *PageSize Postcard
+*UIConstraints: *CoverSlot OptTray1 *PageSize EnvMonarch
+*UIConstraints: *CoverSlot OptTray1 *PageSize EnvDL
+*UIConstraints: *CoverSlot OptTray1 *PageSize EnvC5
+*UIConstraints: *CoverSlot OptTray1 *PageSize Env10
+*UIConstraints: *CoverSlot OptTray1 *PageSize EnvC6
+*UIConstraints: *CoverSlot OptTray1 *PageSize ZL
+*UIConstraints: *CoverSlot OptTray1 *PageSize Yougata4
+*UIConstraints: *CoverSlot OptTray1 *PageSize DoublePostcardRotated
+*UIConstraints: *CoverSlot OptTray1 *PageSize Younaga3
+*UIConstraints: *CoverSlot OptTray1 *PageSize Nagagata3
+*UIConstraints: *CoverSlot OptTray1 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *CoverSlot OptTray2
+*UIConstraints: *PageSize EnvMonarch            *CoverSlot OptTray2
+*UIConstraints: *PageSize EnvDL                 *CoverSlot OptTray2
+*UIConstraints: *PageSize EnvC5                 *CoverSlot OptTray2
+*UIConstraints: *PageSize Env10         	  *CoverSlot OptTray2
+*UIConstraints: *PageSize EnvC6                 *CoverSlot OptTray2
+*UIConstraints: *PageSize ZL                    *CoverSlot OptTray2
+*UIConstraints: *PageSize Yougata4              *CoverSlot OptTray2
+*UIConstraints: *PageSize DoublePostcardRotated *CoverSlot OptTray2
+*UIConstraints: *PageSize Younaga3              *CoverSlot OptTray2
+*UIConstraints: *PageSize Nagagata3             *CoverSlot OptTray2
+*UIConstraints: *PageSize Yougata2              *CoverSlot OptTray2
+
+*% == Constraints (FirstSlot vs. PageSize) ==
+*UIConstraints: *CoverSlot OptTray2 *PageSize Postcard
+*UIConstraints: *CoverSlot OptTray2 *PageSize EnvMonarch
+*UIConstraints: *CoverSlot OptTray2 *PageSize EnvDL
+*UIConstraints: *CoverSlot OptTray2 *PageSize EnvC5
+*UIConstraints: *CoverSlot OptTray2 *PageSize Env10
+*UIConstraints: *CoverSlot OptTray2 *PageSize EnvC6
+*UIConstraints: *CoverSlot OptTray2 *PageSize ZL
+*UIConstraints: *CoverSlot OptTray2 *PageSize Yougata4
+*UIConstraints: *CoverSlot OptTray2 *PageSize DoublePostcardRotated
+*UIConstraints: *CoverSlot OptTray2 *PageSize Younaga3
+*UIConstraints: *CoverSlot OptTray2 *PageSize Nagagata3
+*UIConstraints: *CoverSlot OptTray2 *PageSize Yougata2
+
+*% == Constraints (PageSize vs. FirstSlot) ==
+*UIConstraints: *PageSize Postcard              *CoverSlot AutoSelect
+*UIConstraints: *PageSize EnvMonarch            *CoverSlot AutoSelect
+*UIConstraints: *PageSize EnvDL                 *CoverSlot AutoSelect
+*UIConstraints: *PageSize EnvC5                 *CoverSlot AutoSelect
+*UIConstraints: *PageSize Env10         	  *CoverSlot AutoSelect
+*UIConstraints: *PageSize EnvC6                 *CoverSlot AutoSelect
+*UIConstraints: *PageSize ZL                    *CoverSlot AutoSelect
+*UIConstraints: *PageSize Yougata4              *CoverSlot AutoSelect
+*UIConstraints: *PageSize DoublePostcardRotated *CoverSlot AutoSelect
+*UIConstraints: *PageSize Younaga3              *CoverSlot AutoSelect
+*UIConstraints: *PageSize Nagagata3             *CoverSlot AutoSelect
+*UIConstraints: *PageSize Yougata2              *CoverSlot AutoSelect
+
+*% == Constraints (PFirstSlotvs. PageSize) ==
+*UIConstraints: *CoverSlot AutoSelect *PageSize Postcard
+*UIConstraints: *CoverSlot AutoSelect *PageSize EnvMonarch
+*UIConstraints: *CoverSlot AutoSelect *PageSize EnvDL
+*UIConstraints: *CoverSlot AutoSelect *PageSize EnvC5
+*UIConstraints: *CoverSlot AutoSelect *PageSize Env10
+*UIConstraints: *CoverSlot AutoSelect *PageSize EnvC6
+*UIConstraints: *CoverSlot AutoSelect *PageSize ZL
+*UIConstraints: *CoverSlot AutoSelect *PageSize Yougata4
+*UIConstraints: *CoverSlot AutoSelect *PageSize DoublePostcardRotated
+*UIConstraints: *CoverSlot AutoSelect *PageSize Younaga3
+*UIConstraints: *CoverSlot AutoSelect *PageSize Nagagata3
+*UIConstraints: *CoverSlot AutoSelect *PageSize Yougata2
+
+*% == Constraints (MediaType vs. Paper Source) ==
+*UIConstraints: *MediaType Envelope     *InputSlot AutoFeed
+*UIConstraints: *MediaType Cardstock    *InputSlot AutoFeed
+*UIConstraints: *MediaType Labels        *InputSlot AutoFeed
+*UIConstraints: *MediaType Envelope     *InputSlot AutoSelect
+*UIConstraints: *MediaType Transparency *InputSlot AutoSelect
+*UIConstraints: *MediaType Cardstock    *InputSlot AutoSelect
+*UIConstraints: *MediaType Labels        *InputSlot AutoSelect
+*UIConstraints: *MediaType Envelope     *InputSlot OptTray1
+*UIConstraints: *MediaType Transparency *InputSlot OptTray1
+*UIConstraints: *MediaType Cardstock    *InputSlot OptTray1
+*UIConstraints: *MediaType Labels        *InputSlot OptTray1
+*UIConstraints: *MediaType Envelope     *InputSlot OptTray2
+*UIConstraints: *MediaType Transparency *InputSlot OptTray2
+*UIConstraints: *MediaType Cardstock    *InputSlot OptTray2
+*UIConstraints: *MediaType Labels        *InputSlot OptTray2
+*UIConstraints: *MediaType Transparency *InputSlot MultifunTray
+*UIConstraints: *MediaType Thicker      *InputSlot AutoSelect
+*UIConstraints: *MediaType Thicker      *InputSlot AutoFeed
+*UIConstraints: *MediaType Thicker      *InputSlot OptTray1
+*UIConstraints: *MediaType Thicker      *InputSlot OptTray2
+*UIConstraints: *MediaType Recycled     *InputSlot MultifunTray
+
+*% == Constraints (Paper Source vs. MediaType) ==
+*UIConstraints: *InputSlot AutoFeed     *MediaType Envelope
+*UIConstraints: *InputSlot AutoFeed     *MediaType Cardstock
+*UIConstraints: *InputSlot AutoFeed     *MediaType Labels
+*UIConstraints: *InputSlot AutoSelect   *MediaType Envelope
+*UIConstraints: *InputSlot AutoSelect   *MediaType Transparency
+*UIConstraints: *InputSlot AutoSelect   *MediaType Cardstock
+*UIConstraints: *InputSlot AutoSelect   *MediaType Labels
+*UIConstraints: *InputSlot OptTray1     *MediaType Envelope
+*UIConstraints: *InputSlot OptTray1     *MediaType Transparency
+*UIConstraints: *InputSlot OptTray1     *MediaType Cardstock
+*UIConstraints: *InputSlot OptTray1     *MediaType Labels
+*UIConstraints: *InputSlot OptTray2     *MediaType Envelope
+*UIConstraints: *InputSlot OptTray2     *MediaType Transparency
+*UIConstraints: *InputSlot OptTray2     *MediaType Cardstock
+*UIConstraints: *InputSlot OptTray2     *MediaType Labels
+*UIConstraints: *InputSlot MultifunTray *MediaType Transparency
+*UIConstraints: *InputSlot AutoSelect   *MediaType Thicker
+*UIConstraints: *InputSlot AutoFeed     *MediaType Thicker
+*UIConstraints: *InputSlot OptTray1	    *MediaType Thicker
+*UIConstraints: *InputSlot OptTray2     *MediaType Thicker
+*UIConstraints: *InputSlot MultifunTray *MediaType Recycled
+
+*% == Constraints (FirstMediaType vs. FirstSlot) ==
+*UIConstraints: *FirstMediaType Envelope     *FirstSlot AutoFeed
+*UIConstraints: *FirstMediaType Cardstock    *FirstSlot AutoFeed
+*UIConstraints: *FirstMediaType Labels        *FirstSlot AutoFeed
+*UIConstraints: *FirstMediaType Envelope     *FirstSlot AutoSelect
+*UIConstraints: *FirstMediaType Transparency *FirstSlot AutoSelect
+*UIConstraints: *FirstMediaType Cardstock    *FirstSlot AutoSelect
+*UIConstraints: *FirstMediaType Labels        *FirstSlot AutoSelect
+*UIConstraints: *FirstMediaType Envelope     *FirstSlot OptTray1
+*UIConstraints: *FirstMediaType Transparency *FirstSlot OptTray1
+*UIConstraints: *FirstMediaType Cardstock    *FirstSlot OptTray1
+*UIConstraints: *FirstMediaType Labels        *FirstSlot OptTray1
+*UIConstraints: *FirstMediaType Envelope     *FirstSlot OptTray2
+*UIConstraints: *FirstMediaType Transparency *FirstSlot OptTray2
+*UIConstraints: *FirstMediaType Cardstock    *FirstSlot OptTray2
+*UIConstraints: *FirstMediaType Labels        *FirstSlot OptTray2
+*UIConstraints: *FirstMediaType Transparency *FirstSlot MultifunTray
+*UIConstraints: *FirstMediaType Thicker      *FirstSlot AutoSelect
+*UIConstraints: *FirstMediaType Thicker      *FirstSlot AutoFeed
+*UIConstraints: *FirstMediaType Thicker      *FirstSlot OptTray1
+*UIConstraints: *FirstMediaType Thicker      *FirstSlot OptTray2
+*UIConstraints: *FirstMediaType Recycled     *FirstSlot MultifunTray
+
+*% == Constraints (FirstSlot vs. FirstMediaType) ==
+*UIConstraints: *FirstSlot AutoFeed     *FirstMediaType Envelope
+*UIConstraints: *FirstSlot AutoFeed     *FirstMediaType Cardstock
+*UIConstraints: *FirstSlot AutoFeed     *FirstMediaType Labels
+*UIConstraints: *FirstSlot AutoSelect   *FirstMediaType Envelope
+*UIConstraints: *FirstSlot AutoSelect   *FirstMediaType Transparency
+*UIConstraints: *FirstSlot AutoSelect   *FirstMediaType Cardstock
+*UIConstraints: *FirstSlot AutoSelect   *FirstMediaType Labels
+*UIConstraints: *FirstSlot OptTray1     *FirstMediaType Envelope
+*UIConstraints: *FirstSlot OptTray1     *FirstMediaType Transparency
+*UIConstraints: *FirstSlot OptTray1     *FirstMediaType Cardstock
+*UIConstraints: *FirstSlot OptTray1     *FirstMediaType Labels
+*UIConstraints: *FirstSlot OptTray2     *FirstMediaType Envelope
+*UIConstraints: *FirstSlot OptTray2     *FirstMediaType Transparency
+*UIConstraints: *FirstSlot OptTray2     *FirstMediaType Cardstock
+*UIConstraints: *FirstSlot OptTray2     *FirstMediaType Labels
+*UIConstraints: *FirstSlot MultifunTray *FirstMediaType Transparency
+*UIConstraints: *FirstSlot AutoSelect   *FirstMediaType Thicker
+*UIConstraints: *FirstSlot AutoFeed     *FirstMediaType Thicker
+*UIConstraints: *FirstSlot OptTray1	    *FirstMediaType Thicker
+*UIConstraints: *FirstSlot OptTray2     *FirstMediaType Thicker
+*UIConstraints: *FirstSlot MultifunTray *FirstMediaType Recycled
+
+*% == Constraints (CoverMediaType vs. CoverSlot) ==
+*UIConstraints: *CoverMediaType Envelope     *CoverSlot AutoFeed
+*UIConstraints: *CoverMediaType Cardstock    *CoverSlot AutoFeed
+*UIConstraints: *CoverMediaType Labels        *CoverSlot AutoFeed
+*UIConstraints: *CoverMediaType Envelope     *CoverSlot AutoSelect
+*UIConstraints: *CoverMediaType Transparency *CoverSlot AutoSelect
+*UIConstraints: *CoverMediaType Cardstock    *CoverSlot AutoSelect
+*UIConstraints: *CoverMediaType Labels        *CoverSlot AutoSelect
+*UIConstraints: *CoverMediaType Envelope     *CoverSlot OptTray1
+*UIConstraints: *CoverMediaType Transparency *CoverSlot OptTray1
+*UIConstraints: *CoverMediaType Cardstock    *CoverSlot OptTray1
+*UIConstraints: *CoverMediaType Labels        *CoverSlot OptTray1
+*UIConstraints: *CoverMediaType Envelope     *CoverSlot OptTray2
+*UIConstraints: *CoverMediaType Transparency *CoverSlot OptTray2
+*UIConstraints: *CoverMediaType Cardstock    *CoverSlot OptTray2
+*UIConstraints: *CoverMediaType Labels        *CoverSlot OptTray2
+*UIConstraints: *CoverMediaType Transparency *CoverSlot MultifunTray
+*UIConstraints: *CoverMediaType Thicker      *CoverSlot AutoSelect
+*UIConstraints: *CoverMediaType Thicker      *CoverSlot AutoFeed
+*UIConstraints: *CoverMediaType Thicker      *CoverSlot OptTray1
+*UIConstraints: *CoverMediaType Thicker      *CoverSlot OptTray2
+*UIConstraints: *CoverMediaType Recycled     *CoverSlot MultifunTray
+
+*% == Constraints (CoverSlot vs. CoverMediaType) ==
+*UIConstraints: *CoverSlot AutoFeed     *CoverMediaType Envelope
+*UIConstraints: *CoverSlot AutoFeed     *CoverMediaType Cardstock
+*UIConstraints: *CoverSlot AutoFeed     *CoverMediaType Labels
+*UIConstraints: *CoverSlot AutoSelect   *CoverMediaType Envelope
+*UIConstraints: *CoverSlot AutoSelect   *CoverMediaType Transparency
+*UIConstraints: *CoverSlot AutoSelect   *CoverMediaType Cardstock
+*UIConstraints: *CoverSlot AutoSelect   *CoverMediaType Labels
+*UIConstraints: *CoverSlot OptTray1     *CoverMediaType Envelope
+*UIConstraints: *CoverSlot OptTray1     *CoverMediaType Transparency
+*UIConstraints: *CoverSlot OptTray1     *CoverMediaType Cardstock
+*UIConstraints: *CoverSlot OptTray1     *CoverMediaType Labels
+*UIConstraints: *CoverSlot OptTray2     *CoverMediaType Envelope
+*UIConstraints: *CoverSlot OptTray2     *CoverMediaType Transparency
+*UIConstraints: *CoverSlot OptTray2     *CoverMediaType Cardstock
+*UIConstraints: *CoverSlot OptTray2     *CoverMediaType Labels
+*UIConstraints: *CoverSlot MultifunTray *CoverMediaType Transparency
+*UIConstraints: *CoverSlot AutoSelect   *CoverMediaType Thicker
+*UIConstraints: *CoverSlot AutoFeed     *CoverMediaType Thicker
+*UIConstraints: *CoverSlot OptTray1	    *CoverMediaType Thicker
+*UIConstraints: *CoverSlot OptTray2     *CoverMediaType Thicker
+*UIConstraints: *CoverSlot MultifunTray *CoverMediaType Recycled
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5                    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6                    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B5                    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ISOB5                 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B6                    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Executive             *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Statement             *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big32K                *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big16K                *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 32K                   *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 16K                   *Duplex DuplexNoTumble
+*UIConstraints: *PageSize DoublePostcardRotated *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize EnvMonarch            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL                 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5                 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Env10         	*Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC6                 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ZL                    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Yougata4              *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Postcard              *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Younaga3              *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Nagagata3             *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Yougata2              *Duplex DuplexNoTumble 
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize DoublePostcardRotated
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ZL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Yougata4
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Younaga3
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Nagagata3
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Yougata2
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Envelope     *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Cardstock    *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Labels        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Kleenex      *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Thicker      *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Recycled     *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Labels
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Kleenex
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Thicker
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Recycled
+
+*% == Constraints (FirstMediaType vs. Duplex) ==
+*UIConstraints: *FirstMediaType Thick        *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Envelope     *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Cardstock    *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Labels        *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Kleenex      *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Thicker      *Duplex DuplexNoTumble
+*UIConstraints: *FirstMediaType Recycled     *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. FirstMediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Thick
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Envelope
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Transparency
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Cardstock
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Labels
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Kleenex
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Thicker
+*UIConstraints: *Duplex DuplexNoTumble *FirstMediaType Recycled
+
+
+*% == Constraints (CoverMediaType vs. Duplex) ==
+*UIConstraints: *CoverMediaType Thick        *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Envelope     *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Cardstock    *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Labels        *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Kleenex      *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Thicker      *Duplex DuplexNoTumble
+*UIConstraints: *CoverMediaType Recycled     *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. CoverMediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Thick
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Envelope
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Transparency
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Cardstock
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Labels
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Kleenex
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Thicker
+*UIConstraints: *Duplex DuplexNoTumble *CoverMediaType Recycled
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5                    *Duplex DuplexTumble
+*UIConstraints: *PageSize A6                    *Duplex DuplexTumble
+*UIConstraints: *PageSize B5                    *Duplex DuplexTumble
+*UIConstraints: *PageSize ISOB5                 *Duplex DuplexTumble
+*UIConstraints: *PageSize B6                    *Duplex DuplexTumble
+*UIConstraints: *PageSize Executive             *Duplex DuplexTumble
+*UIConstraints: *PageSize Statement             *Duplex DuplexTumble
+*UIConstraints: *PageSize Big32K                *Duplex DuplexTumble
+*UIConstraints: *PageSize Big16K                *Duplex DuplexTumble
+*UIConstraints: *PageSize 32K                   *Duplex DuplexTumble
+*UIConstraints: *PageSize 16K                   *Duplex DuplexTumble
+*UIConstraints: *PageSize DoublePostcardRotated *Duplex DuplexTumble 
+*UIConstraints: *PageSize EnvMonarch            *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL                 *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5                 *Duplex DuplexTumble
+*UIConstraints: *PageSize Env10         	*Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC6                 *Duplex DuplexTumble
+*UIConstraints: *PageSize ZL                    *Duplex DuplexTumble
+*UIConstraints: *PageSize Yougata4              *Duplex DuplexTumble 
+*UIConstraints: *PageSize Postcard              *Duplex DuplexTumble
+*UIConstraints: *PageSize Younaga3              *Duplex DuplexTumble 
+*UIConstraints: *PageSize Nagagata3             *Duplex DuplexTumble 
+*UIConstraints: *PageSize Yougata2              *Duplex DuplexTumble 
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexTumble *PageSize A5
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *Duplex DuplexTumble *PageSize B5
+*UIConstraints: *Duplex DuplexTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexTumble *PageSize B6
+*UIConstraints: *Duplex DuplexTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexTumble *PageSize DoublePostcardRotated
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexTumble *PageSize ZL
+*UIConstraints: *Duplex DuplexTumble *PageSize Yougata4
+*UIConstraints: *Duplex DuplexTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexTumble *PageSize Younaga3
+*UIConstraints: *Duplex DuplexTumble *PageSize Nagagata3
+*UIConstraints: *Duplex DuplexTumble *PageSize Yougata2
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick        *Duplex DuplexTumble
+*UIConstraints: *MediaType Envelope     *Duplex DuplexTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *MediaType Cardstock    *Duplex DuplexTumble
+*UIConstraints: *MediaType Labels        *Duplex DuplexTumble
+*UIConstraints: *MediaType Kleenex      *Duplex DuplexTumble
+*UIConstraints: *MediaType Thicker      *Duplex DuplexTumble
+*UIConstraints: *MediaType Recycled     *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexTumble *MediaType Labels
+*UIConstraints: *Duplex DuplexTumble *MediaType Kleenex
+*UIConstraints: *Duplex DuplexTumble *MediaType Thicker
+*UIConstraints: *Duplex DuplexTumble *MediaType Recycled
+
+*% == Constraints (FirstMediaType vs. Duplex) ==
+*UIConstraints: *FirstMediaType Thick        *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Envelope     *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Cardstock    *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Labels        *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Kleenex      *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Thicker      *Duplex DuplexTumble
+*UIConstraints: *FirstMediaType Recycled     *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. FirstMediaType) ==
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Thick
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Envelope
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Transparency
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Cardstock
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Labels
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Kleenex
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Thicker
+*UIConstraints: *Duplex DuplexTumble *FirstMediaType Recycled
+
+
+*% == Constraints (CoverMediaType vs. Duplex) ==
+*UIConstraints: *CoverMediaType Thick        *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Envelope     *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Cardstock    *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Labels        *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Kleenex      *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Thicker      *Duplex DuplexTumble
+*UIConstraints: *CoverMediaType Recycled     *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CoverMediaType) ==
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Thick
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Envelope
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Transparency
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Cardstock
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Labels
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Kleenex
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Thicker
+*UIConstraints: *Duplex DuplexTumble *CoverMediaType Recycled
+*% == Constraints (OptTray vs. InputSlot) ==
+*UIConstraints: *OptTray1 NotInstalled      *InputSlot OptTray1
+*UIConstraints: *OptTray2 NotInstalled      *InputSlot OptTray2
+
+*% == Constraints (InputSlot vs. OptTray) ==
+*UIConstraints: *InputSlot OptTray1          *OptTray1 NotInstalled
+*UIConstraints: *InputSlot OptTray2          *OptTray2 NotInstalled
+
+*% == Constraints (OptTray vs. FirstSlot) ==
+*UIConstraints: *OptTray1 NotInstalled      *FirstSlot OptTray1
+*UIConstraints: *OptTray2 NotInstalled      *FirstSlot OptTray2
+
+*% == Constraints (FirstSlot vs. OptTray) ==
+*UIConstraints: *FirstSlot OptTray1          *OptTray1 NotInstalled
+*UIConstraints: *FirstSlot OptTray2          *OptTray2 NotInstalled
+
+*% == Constraints (OptTray vs. CoverSlot) ==
+*UIConstraints: *OptTray1 NotInstalled      *CoverSlot OptTray1
+*UIConstraints: *OptTray2 NotInstalled      *CoverSlot OptTray2
+
+*% == Constraints (CoverSlot vs. OptTray) ==
+*UIConstraints: *CoverSlot OptTray1          *OptTray1 NotInstalled
+*UIConstraints: *CoverSlot OptTray2          *OptTray2 NotInstalled
+
+*% == Constraints (Duplex vs. Booklet) ==
+*UIConstraints: *Duplex DuplexNoTumble *Booklet True
+*UIConstraints: *Duplex None           *Booklet True
+
+*% == Constraints (Duplex vs. Booklet) ==
+*UIConstraints: *Booklet True *Duplex DuplexNoTumble
+*UIConstraints: *Booklet True *Duplex None
+
+*% == Constraints (CoverPrint vs. Booklet) ==
+*UIConstraints: *CoverPrint True *Booklet False
+
+*% == Constraints (Booklet vs. CoverPrint) ==
+*UIConstraints: *Booklet False *CoverPrint True
+
+*% == Constraints (FirstPrint vs. Booklet) ==
+*UIConstraints: *FirstPrint True *Booklet True
+
+*% == Constraints (Booklet vs. FirstPrint) ==
+*UIConstraints: *Booklet True *FirstPrint True
+
+*% == Constraints (Booklet vs. Scale) ==
+*UIConstraints: *Booklet True     *Scale 0.25
+*UIConstraints: *Booklet True     *Scale 0.50
+*UIConstraints: *Booklet True     *Scale 1.10
+*UIConstraints: *Booklet True     *Scale 1.20
+*UIConstraints: *Booklet True     *Scale 1.30
+*UIConstraints: *Booklet True     *Scale 1.40
+*UIConstraints: *Booklet True     *Scale 1.50
+*UIConstraints: *Booklet True     *Scale 2.00 
+*UIConstraints: *Booklet True     *Scale 3.00 
+*UIConstraints: *Booklet True     *Scale 4.00
+
+*% == Constraints (Scale vs. Booklet) ==
+*UIConstraints: *Scale 0.25      *Booklet True
+*UIConstraints: *Scale 0.50      *Booklet True
+*UIConstraints: *Scale 1.10      *Booklet True
+*UIConstraints: *Scale 1.20      *Booklet True
+*UIConstraints: *Scale 1.30      *Booklet True
+*UIConstraints: *Scale 1.40      *Booklet True
+*UIConstraints: *Scale 1.50      *Booklet True
+*UIConstraints: *Scale 2.00      *Booklet True
+*UIConstraints: *Scale 3.00      *Booklet True
+*UIConstraints: *Scale 4.00      *Booklet True
+
+*% == Constraints (CoverPrint vs. PrintOnFrontIn ) ==
+*UIConstraints: *CoverPrint False  *PrintOnFrontIn True
+
+*% == Constraints (PrintOnFrontIn vs. CoverPrint) ==
+*UIConstraints: *PrintOnFrontIn True  *CoverPrint False
+
+*% == Constraints (CoverPrint vs. PrintOnFrontOut ) ==
+*UIConstraints: *CoverPrint False  *PrintOnFrontOut True
+
+*% == Constraints (PrintOnFrontOut vs. CoverPrint) ==
+*UIConstraints: *PrintOnFrontOut True  *CoverPrint False
+
+*% == Constraints (CoverPrint vs. PrintOnBackIn ) ==
+*UIConstraints: *CoverPrint False  *PrintOnBackIn True
+
+*% == Constraints (PrintOnBackIn vs. CoverPrint) ==
+*UIConstraints: *PrintOnBackIn True  *CoverPrint False
+
+*% == Constraints (CoverPrint vs. PrintOnBackOut ) ==
+*UIConstraints: *CoverPrint False  *PrintOnBackOut True
+
+*% == Constraints (PrintOnBackOut vs. CoverPrint) ==
+*UIConstraints: *PrintOnBackOut True  *CoverPrint False
+
+
+*% == Constraints (CustomPageSize vs. Duplex) ==
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CustomPageSize) ==
+*NonUIConstraints: *Duplex DuplexNoTumble          *CustomPageSize True
+*NonUIConstraints: *Duplex DuplexTumble            *CustomPageSize True
+
+*% == Constraints (CustomPageSize vs. PaperType) ==
+*NonUIConstraints: *CustomPageSize True	    	*MediaType Envelope
+
+*% == Constraints (PaperType vs. CustomPageSize) ==
+*NonUIConstraints: *MediaType Envelope	        *CustomPageSize True
+
+
+*% == Constraints (CustomPageSize vs. PrinterFeedOrientation) ==
+*NonUIConstraints: *CustomPageSize True	    	*PrinterFeedOrientation LongEdgeFeed
+
+*% == Constraints (PrinterFeedOrientation vs. CustomPageSize) ==
+*NonUIConstraints: *PrinterFeedOrientation LongEdgeFeed	        *CustomPageSize True
+
+*% == Constraints (TonerMode vs. Density) ==
+*NonUIConstraints: *TonerMode True        *Density Normal
+*NonUIConstraints: *TonerMode True        *Density Darker
+
+*% == Constraints (Density vs. TonerMode) ==
+*NonUIConstraints: *Density Darker	        *TonerMode True
+*NonUIConstraints: *Density Normal	        *TonerMode True
+
+*% == Constraints (Poster vs. Duplex) ==
+*UIConstraints: *Poster 2    *Duplex DuplexTumble
+*UIConstraints: *Poster 2    *Duplex DuplexNoTumble
+*UIConstraints: *Poster 3    *Duplex DuplexTumble
+*UIConstraints: *Poster 3    *Duplex DuplexNoTumble
+*UIConstraints: *Poster 4    *Duplex DuplexTumble
+*UIConstraints: *Poster 4    *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. Poster) ==
+*UIConstraints: *Duplex DuplexTumble     *Poster 2
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 2
+*UIConstraints: *Duplex DuplexTumble     *Poster 3
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 3
+*UIConstraints: *Duplex DuplexTumble     *Poster 4
+*UIConstraints: *Duplex DuplexNoTumble   *Poster 4
+
+*% == Constraints (OutputPageSize vs. Poster) ==
+*UIConstraints: *OutputPageSize True     *Poster 2
+*UIConstraints: *OutputPageSize True     *Poster 3
+*UIConstraints: *OutputPageSize True     *Poster 4
+
+*% == Constraints (Poster vs. OutputPageSize) ==
+*UIConstraints: *Poster 2      *OutputPageSize True
+*UIConstraints: *Poster 3      *OutputPageSize True
+*UIConstraints: *Poster 4      *OutputPageSize True
+
+*% == Constraints (Booklet vs. Poster) ==
+*UIConstraints: *Booklet True     *Poster 2
+*UIConstraints: *Booklet True     *Poster 3
+*UIConstraints: *Booklet True     *Poster 4
+
+*% == Constraints (Poster vs. Booklet) ==
+*UIConstraints: *Poster 2    *Booklet True
+*UIConstraints: *Poster 3    *Booklet True
+*UIConstraints: *Poster 4    *Booklet True
+
+*% == Constraints (Poster vs. Scale) ==
+*UIConstraints: *Poster 2      *Scale 0.25
+*UIConstraints: *Poster 2      *Scale 0.50
+*UIConstraints: *Poster 2      *Scale 1.10
+*UIConstraints: *Poster 2      *Scale 1.20
+*UIConstraints: *Poster 2      *Scale 1.30
+*UIConstraints: *Poster 2      *Scale 1.40
+*UIConstraints: *Poster 2      *Scale 1.50
+*UIConstraints: *Poster 2      *Scale 2.00
+*UIConstraints: *Poster 2      *Scale 3.00
+*UIConstraints: *Poster 2      *Scale 4.00
+*UIConstraints: *Poster 3      *Scale 0.25
+*UIConstraints: *Poster 3      *Scale 0.50
+*UIConstraints: *Poster 3      *Scale 1.10
+*UIConstraints: *Poster 3      *Scale 1.20
+*UIConstraints: *Poster 3      *Scale 1.30
+*UIConstraints: *Poster 3      *Scale 1.40
+*UIConstraints: *Poster 3      *Scale 1.50
+*UIConstraints: *Poster 3      *Scale 2.00
+*UIConstraints: *Poster 3      *Scale 3.00
+*UIConstraints: *Poster 3      *Scale 4.00
+*UIConstraints: *Poster 4      *Scale 0.25
+*UIConstraints: *Poster 4      *Scale 0.50
+*UIConstraints: *Poster 4      *Scale 1.10
+*UIConstraints: *Poster 4      *Scale 1.20
+*UIConstraints: *Poster 4      *Scale 1.30
+*UIConstraints: *Poster 4      *Scale 1.40
+*UIConstraints: *Poster 4      *Scale 1.50
+*UIConstraints: *Poster 4      *Scale 2.00
+*UIConstraints: *Poster 4      *Scale 3.00
+*UIConstraints: *Poster 4      *Scale 4.00
+
+*% == Constraints (Scale vs. Poster) ==
+*UIConstraints: *Scale 0.25      *Poster 2
+*UIConstraints: *Scale 0.50      *Poster 2
+*UIConstraints: *Scale 1.10      *Poster 2
+*UIConstraints: *Scale 1.20      *Poster 2
+*UIConstraints: *Scale 1.30      *Poster 2
+*UIConstraints: *Scale 1.40      *Poster 2
+*UIConstraints: *Scale 1.50      *Poster 2
+*UIConstraints: *Scale 2.00      *Poster 2
+*UIConstraints: *Scale 3.00      *Poster 2
+*UIConstraints: *Scale 4.00      *Poster 2
+*UIConstraints: *Scale 0.25      *Poster 3
+*UIConstraints: *Scale 0.50      *Poster 3
+*UIConstraints: *Scale 1.10      *Poster 3
+*UIConstraints: *Scale 1.20      *Poster 3
+*UIConstraints: *Scale 1.30      *Poster 3
+*UIConstraints: *Scale 1.40      *Poster 3
+*UIConstraints: *Scale 1.50      *Poster 3
+*UIConstraints: *Scale 2.00      *Poster 3
+*UIConstraints: *Scale 3.00      *Poster 3
+*UIConstraints: *Scale 4.00      *Poster 3
+*UIConstraints: *Scale 0.25      *Poster 4
+*UIConstraints: *Scale 0.50      *Poster 4
+*UIConstraints: *Scale 1.10      *Poster 4
+*UIConstraints: *Scale 1.20      *Poster 4
+*UIConstraints: *Scale 1.30      *Poster 4
+*UIConstraints: *Scale 1.40      *Poster 4
+*UIConstraints: *Scale 1.50      *Poster 4
+*UIConstraints: *Scale 2.00      *Poster 4
+*UIConstraints: *Scale 3.00      *Poster 4
+*UIConstraints: *Scale 4.00      *Poster 4
+
+*% == Constraints (OutputPageSize vs. Booklet) ==
+*UIConstraints: *OutputPageSize True     *Booklet True
+
+*% == Constraints (Booklet vs. OutputPageSize) ==
+*UIConstraints: *Booklet True     *OutputPageSize True
+
+*% == Constraints (OutputPageSize vs. Scale) ==
+*UIConstraints: *OutputPageSize True   *Scale 0.25
+*UIConstraints: *OutputPageSize True   *Scale 0.50
+*UIConstraints: *OutputPageSize True   *Scale 1.10
+*UIConstraints: *OutputPageSize True   *Scale 1.20
+*UIConstraints: *OutputPageSize True   *Scale 1.30
+*UIConstraints: *OutputPageSize True   *Scale 1.40
+*UIConstraints: *OutputPageSize True   *Scale 1.50
+*UIConstraints: *OutputPageSize True   *Scale 2.00
+*UIConstraints: *OutputPageSize True   *Scale 3.00
+*UIConstraints: *OutputPageSize True   *Scale 4.00
+
+*% == Constraints (Scale vs. OutputPageSize) ==
+*UIConstraints: *Scale 0.25     *OutputPageSize True
+*UIConstraints: *Scale 0.50     *OutputPageSize True
+*UIConstraints: *Scale 1.10     *OutputPageSize True
+*UIConstraints: *Scale 1.20     *OutputPageSize True
+*UIConstraints: *Scale 1.30     *OutputPageSize True
+*UIConstraints: *Scale 1.40     *OutputPageSize True
+*UIConstraints: *Scale 1.50     *OutputPageSize True
+*UIConstraints: *Scale 2.00     *OutputPageSize True
+*UIConstraints: *Scale 3.00     *OutputPageSize True
+*UIConstraints: *Scale 4.00     *OutputPageSize True
+
+*% == Constraints (CustomPageSize vs. OutputPageSize) ==
+*NonUIConstraints: *CustomPageSize True            *OutputPageSize True
+
+*% == Constraints (OutputPageSize vs. CustomPageSize) ==
+*NonUIConstraints: *OutputPageSize True          *CustomPageSize True
+
+*driverName pxlcolor: ""
+*driverType G/Ghostscript built-in: ""
+*driverUrl: "http://www.ghostscript.com/"
+*driverObsolete: False
+*driverManufacturerSupplied: False
+
+*DefaultResolution: 600dpi
+
+*HWMargins: 18 36 18 36
+
+*FoomaticIDs: Generic-PCL_6_PCL_XL_Printer pxlcolor
+*FoomaticRIPCommandLine: "gs -o -%C -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNO&&
+INTERPOLATE -dNOMEDIAATTRS%B%A%Z -f -"
+*End
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 100 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/US Letter: ""
+*PageSize Legal/US Legal: ""
+*PageSize Oficio/Oficio (Mexico): ""
+*PageSize B5/B5 (JIS): ""
+*PageSize ISOB5/ISO B5: ""
+*PageSize B6/B6: ""
+*PageSize Executive/Executive: ""
+*PageSize A5/A5: ""
+*PageSize A6/A6: ""
+*PageSize Folio/Folio: ""
+*PageSize A4/A4: ""
+*PageSize Statement/Statement: ""
+*PageSize Postcard/Japanese Postcard: ""
+*PageSize EnvMonarch/Monarch Env: ""
+*PageSize Env10/Envelope #10: ""
+*PageSize EnvC5/Envelope C5: ""
+*PageSize EnvDL/Envelope DL: ""
+*PageSize EnvC6/C6 Env: ""
+*PageSize ZL/ZL: ""
+*PageSize Big32K/Big 32K: ""
+*PageSize Big16K/Big 16K: ""
+*PageSize 32K/32K: ""
+*PageSize 16K/16K: ""
+*PageSize Yougata4/Yougata4: ""
+*PageSize DoublePostcardRotated/Postcard: ""
+*PageSize Younaga3/Younaga3: ""
+*PageSize Nagagata3/Nagagata3: ""
+*PageSize Yougata2/Yougata2: ""
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 100 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/US Letter: ""
+*PageRegion Legal/US Legal: ""
+*PageRegion Oficio/Oficio (Mexico): ""
+*PageRegion B5/B5 (JIS): ""
+*PageRegion ISOB5/ISO B5: ""
+*PageRegion B6/B6: ""
+*PageRegion Executive/Executive: ""
+*PageRegion A5/A5: ""
+*PageRegion A6/A6: ""
+*PageRegion Folio/Folio: ""
+*PageRegion A4/A4: ""
+*PageRegion Statement/Statement: ""
+*PageRegion Postcard/Japanese Postcard: ""
+*PageRegion EnvMonarch/Monarch Env: ""
+*PageRegion Env10/Envelope #10: ""
+*PageRegion EnvC5/Envelope C5: ""
+*PageRegion EnvDL/Envelope DL: ""
+*PageRegion EnvC6/C6 Env: ""
+*PageRegion ZL/ZL: ""
+*PageRegion Big32K/Big 32K: ""
+*PageRegion Big16K/Big 16K: ""
+*PageRegion 32K/32K: ""
+*PageRegion 16K/16K: ""
+*PageRegion Yougata4/Yougata4: ""
+*PageRegion DoublePostcardRotated/Postcard: ""
+*PageRegion Younaga3/Younaga3: ""
+*PageRegion Nagagata3/Nagagata3: ""
+*PageRegion Yougata2/Yougata2: ""
+*CloseUI: *PageRegion
+
+*OpenUI *OutputPageSize/OutputPageSize: Boolean
+*OrderDependency: 50 AnySetup *OutputPageSize
+*DefaultOutputPageSize: False
+*OutputPageSize False/Off: ""
+*OutputPageSize True/On: ""
+*CloseUI: *OutputPageSize
+
+*DefaultImageableArea: A4
+*ImageableArea Letter/US Letter: "12 12 600 780"
+*ImageableArea Legal/US Legal: "12 12 600 996"
+*ImageableArea Oficio/Oficio (Mexico): "12 12 600 953"
+*ImageableArea B5/B5 (JIS): "12 12 504 717"
+*ImageableArea ISOB5/ISO B5: "12 12 487 697"
+*ImageableArea B6/B6: "12 12 342 487"
+*ImageableArea A4/A4: "12 12 583 830"
+*ImageableArea Executive/Executive: "12 12 510 744"
+*ImageableArea A5/A5: "12 12 408 583"
+*ImageableArea A6/A6: "12 12 285 407"
+*ImageableArea Folio/Folio: "12 12 583 923"
+*ImageableArea Statement/Statement: "12 12 384 600"
+*ImageableArea Postcard/Japanese Postcard: "12 12 271 408"
+*ImageableArea EnvMonarch/Monarch Env: "12 12 267 528"
+*ImageableArea Env10/Envelope 10: "12 12 285 672"
+*ImageableArea EnvDL/Envelope DL: "12 12 300 612"
+*ImageableArea EnvC5/Envelope C5: "12 12 447 637"
+*ImageableArea EnvC6/C6 Env: "12 12 311 447"
+*ImageableArea ZL/ZL: "12 12 328 640"
+*ImageableArea Big32K/Big 32K: "12 12 371 541"
+*ImageableArea Big16K/Big 16K: "12 12 541 753"
+*ImageableArea 32K/32K: "12 12 357 512"
+*ImageableArea 16K/16K: "12 12 512 725"
+*ImageableArea Yougata4/Yougata4: "12 12 285 654"
+*ImageableArea DoublePostcardRotated/Postcard: "12 12 407 554"
+*ImageableArea Younaga3/Younaga3: "12 12 328 654"
+*ImageableArea Nagagata3/Nagagata3: "12 12 336 654"
+*ImageableArea Yougata2/Yougata2: "12 12 319 455"
+
+*DefaultPaperDimension: A4
+*PaperDimension Letter/US Letter: "612 792"
+*PaperDimension Legal/US Legal: "612 1008"
+*PaperDimension Oficio/Oficio (Mexico): "612 965"
+*PaperDimension B5/B5 (JIS): "516 729"
+*PaperDimension ISOB5/ISO B5: "499 709"
+*PaperDimension B6/B6: "354 499"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension A5/A5: "420 595"
+*PaperDimension A6/A6: "297 419"
+*PaperDimension Folio/Folio: "595 935"
+*PaperDimension Statement/Statement: "396 612"
+*PaperDimension Postcard/Japanese Postcard: "283 420"
+*PaperDimension EnvMonarch/Monarch Env: "279 540"
+*PaperDimension Env10/Envelope #10: "297 684"
+*PaperDimension EnvDL/Envelope DL: "312 624"
+*PaperDimension EnvC5/Envelope C5: "459 649"
+*PaperDimension EnvC6/C6 Env: "323 459"
+*PaperDimension ZL/ZL: "340 652"
+*PaperDimension Big32K/Big 32K: "383 553"
+*PaperDimension Big16K/Big 16K: "553 765"
+*PaperDimension 32K/32K: "369 524"
+*PaperDimension 16K/16K: "524 737"
+*PaperDimension Yougata4/Yougata4: "297 666"
+*PaperDimension DoublePostcardRotated/Postcard: "419 566"
+*PaperDimension Younaga3/Younaga3: "340 666"
+*PaperDimension Nagagata3/Nagagata3: "348 666"
+*PaperDimension Yougata2/Yougata2: "331 467"
+
+*VariablePaperSize: True
+*MaxMediaWidth: 100000
+*MaxMediaHeight: 100000
+*NonUIOrderDependency: 100 AnySetup *CustomPageSize
+*CustomPageSize True: "pop pop pop pop pop
+%% FoomaticRIPOptionSetting: PageSize=Custom"
+*End
+*FoomaticRIPOptionSetting PageSize=Custom: ""
+*End
+*ParamCustomPageSize Width: 1 points 36 100000
+*ParamCustomPageSize Height: 2 points 36 100000
+*ParamCustomPageSize Orientation: 3 int 0 0
+*ParamCustomPageSize WidthOffset: 4 points 0 0
+*ParamCustomPageSize HeightOffset: 5 points 0 0
+
+*OpenUI *InputSlot/Media Source: PickOne
+*DefaultInputSlot: AutoSelect
+*InputSlot AutoSelect/AutoSelect: ""
+*InputSlot MultifunTray/Multipurpose Input Tray: ""
+*InputSlot AutoFeed/Automatic Feeder Tray: ""
+*InputSlot OptTray1/Optional Input Tray 1: ""
+*InputSlot OptTray2/Optional Input Tray 2: ""
+*CloseUI: *InputSlot
+
+*OpenUI *MediaType/Media Type: PickOne
+*DefaultMediaType: Plain
+*OrderDependency: 30 JCLSetup MediaType
+*MediaType Plain/Plain:	"@PJL SET PAPERTYPE=PLAIN<0D><0A>"
+*MediaType Thick/Thick: "@PJL SET PAPERTYPE=TOUGH<0D><0A>"
+*MediaType Envelope/Envelope: "@PJL SET PAPERTYPE=ENVELOPE<0D><0A>"
+*MediaType Transparency/Transparency: "@PJL SET PAPERTYPE=TRANSPARENCY<0D><0A>"
+*MediaType Cardstock/Cardstock: "@PJL SET PAPERTYPE=CARDSTOCK<0D><0A>"
+*MediaType Labels/Labels: "@PJL SET PAPERTYPE=LABELS<0D><0A>"
+*MediaType Kleenex/Thin paper: "@PJL SET PAPERTYPE=TISSUE<0D><0A>"
+*MediaType Thicker/Thicker paper: "@PJL SET PAPERTYPE=TOUGHER<0D><0A>"
+*MediaType Recycled/Recycled Paper: "@PJL SET PAPERTYPE=RECYCLED<0D><0A>"
+*CloseUI: *MediaType
+
+*OpenUI *Duplex/Double-Sided Printing: PickOne
+*DefaultDuplex: None
+*Duplex DuplexNoTumble/On (Flip on Long Edge): ""
+*Duplex DuplexTumble/On (Flip on Short Edge): ""
+*Duplex None/Off: ""
+*CloseUI: *Duplex
+
+*OpenUI *PrinterFeedOrientation/FeedOrientation: PickOne
+*DefaultPrinterFeedOrientation: LongEdgeFeed
+*OrderDependency: 20 JCLSetup PrinterFeedOrientation
+*PrinterFeedOrientation LongEdgeFeed/Long Edge Feed: ""
+*PrinterFeedOrientation ShortEdgeFeed/Short Edge Feed: ""
+*CloseUI: *PrinterFeedOrientation
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 50 AnySetup *Collate
+*DefaultCollate: False
+*Collate False/Off: ""
+*Collate True/On: ""
+*CloseUI: *Collate
+*%CloseGroup: General
+
+*%OpenGroup: PrintoutMode/Printout Mode
+*OpenUI *ColorModel/Color Mode: PickOne
+*DefaultColorModel: Grayscale
+*ColorModel Grayscale/Monochrome: ""
+*CloseUI: *ColorModel
+
+*OpenUI *PrinterResolution/Resolution: PickOne
+*OrderDependency: 10 JCLSetup *PrinterResolution
+*DefaultPrinterResolution: 600x600dpi
+*PrinterResolution 600x600dpi/600x600 DPI: "@PJL SET RESOLUTION=600<0D><0A>@PJL SET RENDERMODEL=G1<0D><0A>"
+*PrinterResolution 1200x1200dpi/1200x1200 DPI: "@PJL SET RESOLUTION=600<0D><0A>@PJL SET RENDERMODEL=G2<0D><0A>"
+*CloseUI: *PrinterResolution
+
+*OpenUI *Density/Density: PickOne
+*DefaultDensity: Normal
+*OrderDependency: 20 JCLSetup Density
+*Density Lighter/Lighter: "@PJL SET DENSITY=LEVEL0<0D><0A>"
+*Density Normal/Normal: "@PJL SET DENSITY=LEVEL2<0D><0A>"
+*Density Darker/Darker: "@PJL SET DENSITY=LEVEL4<0D><0A>"
+*CloseUI: *Density
+
+*OpenUI *TonerMode/Toner Save: Boolean
+*OrderDependency: 10 JCLSetup *TonerMode
+*DefaultTonerMode: False
+*TonerMode False/Off: ""
+*TonerMode True/On: ""
+*CloseUI: *TonerMode
+
+*OpenUI *FineMode/FineMode: Boolean
+*OrderDependency: 10 JCLSetup *FineMode
+*DefaultFineMode: False
+*FineMode False/Off: "@PJL SET FINE=OFF<0D><0A>"
+*FineMode True/On: "@PJL SET FINE=ON<0D><0A>"
+*CloseUI: *FineMode
+
+*% ================================================
+*% First Print
+*% ================================================
+*OpenUI *FirstPrint/Use Different Paper: PickOne
+*OrderDependency: 60 AnySetup *FirstPrint
+*DefaultFirstPrint: False
+*FirstPrint True/Yes: ""
+*FirstPrint False/No: ""
+*CloseUI: *FirstPrint 
+
+*OpenUI *FirstSlot/First Page Media Source: PickOne
+*DefaultFirstSlot: SameAs
+*FirstSlot SameAs/Same as Input Slot: ""
+*FirstSlot AutoSelect/AutoSelect: ""
+*FirstSlot MultifunTray/Multipurpose Input Tray: ""
+*FirstSlot AutoFeed/Automatic Feeder Tray: ""
+*FirstSlot OptTray1/Optional Input Tray 1: ""
+*FirstSlot OptTray2/Optional Input Tray 2: ""
+*CloseUI: *FirstSlot
+
+*OpenUI *FirstMediaType/First Page Media Type: PickOne
+*DefaultFirstMediaType: SameAs
+*FirstMediaType SameAs/Same as Media Type: ""
+*FirstMediaType Plain/Plain:	""
+*FirstMediaType Thick/Thick: ""
+*FirstMediaType Envelope/Envelope: ""
+*FirstMediaType Transparency/Transparency: ""
+*FirstMediaType Cardstock/Cardstock: ""
+*FirstMediaType Labels/Labels: ""
+*FirstMediaType Kleenex/Thin paper: ""
+*FirstMediaType Thicker/Thicker paper: ""
+*FirstMediaType Recycled/Recycled Paper: ""
+*CloseUI: *FirstMediaType
+
+*OpenUI *Booklet/Format Output as Booklet: PickOne
+*OrderDependency: 60 AnySetup *Booklet
+*DefaultBooklet: False
+*Booklet True/Yes: ""
+*Booklet False/No: ""
+*CloseUI: *Booklet
+
+*% ================================================
+*% Cover
+*% ================================================
+*OpenUI *CoverPrint/Use Cover Print: PickOne
+*OrderDependency: 60 AnySetup *CoverPrint
+*DefaultCoverPrint: False
+*CoverPrint True/Yes: ""
+*CoverPrint False/No: ""
+*CloseUI: *CoverPrint
+
+*OpenUI *PrintOnFrontIn/Print on Front Cover Inside: Boolean
+*OrderDependency: 50 JCLSetup *PrintOnFrontIn
+*DefaultPrintOnFrontIn: False
+*PrintOnFrontIn False/Off: 
+*PrintOnFrontIn True/On: 
+*CloseUI: *PrintOnFrontIn
+
+*OpenUI *PrintOnFrontOut/Print on Front Cover Outside: Boolean
+*OrderDependency: 50 JCLSetup *PrintOnFrontOut
+*DefaultPrintOnFrontOut: False
+*PrintOnFrontOut False/Off: 
+*PrintOnFrontOut True/On: 
+*CloseUI: *PrintOnFrontOut
+
+*OpenUI *PrintOnBackIn/Print on Back Cover Inside: Boolean
+*OrderDependency: 50 JCLSetup *PrintOnBackIn
+*DefaultPrintOnBackIn: False
+*PrintOnBackIn False/Off: 
+*PrintOnBackIn True/On: 
+*CloseUI: *PrintBackIn
+
+*OpenUI *PrintOnBackOut/Print on Back Cover Outside: Boolean
+*OrderDependency: 50 JCLSetup *PrintOnBackOut
+*DefaultPrintOnBackOut: False
+*PrintOnBackOut False/Off: 
+*PrintOnBackOut True/On: 
+*CloseUI: *PrintOnBackOut
+
+*OpenUI *CoverSlot/Cover Media Source: PickOne
+*DefaultCoverSlot: SameAs
+*CoverSlot SameAs/Same as Input Slot: ""
+*CoverSlot AutoSelect/AutoSelect: ""
+*CoverSlot MultifunTray/Multipurpose Input Tray: ""
+*CoverSlot AutoFeed/Automatic Feeder Tray: ""
+*CoverSlot OptTray1/Optional Input Tray 1: ""
+*CoverSlot OptTray2/Optional Input Tray 2: ""
+*CloseUI: *CoverSlot
+
+*OpenUI *CoverMediaType/Cover Media Type: PickOne
+*DefaultCoverMediaType: SameAs
+*CoverMediaType SameAs/Same as Media Type: ""
+*CoverMediaType Plain/Plain:	""
+*CoverMediaType Thick/Thick: ""
+*CoverMediaType Envelope/Envelope: ""
+*CoverMediaType Transparency/Transparency: ""
+*CoverMediaType Cardstock/Cardstock: ""
+*CoverMediaType Labels/Labels: ""
+*CoverMediaType Kleenex/Thin paper: ""
+*CoverMediaType Thicker/Thicker paper: ""
+*CoverMediaType Recycled/Recycled Paper: ""
+*CloseUI: *CoverMediaType
+
+*OpenUI *PrintMode/Normal Mode: PickOne
+*OrderDependency: 15 JCLSetup *PrintMode
+*DefaultPrintMode: NormalMode
+*PrintMode NormalMode/Normal Mode: ""
+*PrintMode ImageMode/Image Mode: ""
+*CloseUI: *PrintMode
+
+*OpenUI *Scale/Scale: PickOne
+*OrderDependency: 15 AnySetup *Scale
+*DefaultScale: 1.00
+*Scale 0.25/25%: ""
+*Scale 0.50/50%: ""
+*Scale 1.00/100%: ""
+*Scale 1.10/110%: ""
+*Scale 1.20/120%: ""
+*Scale 1.30/130%: ""
+*Scale 1.40/140%: ""
+*Scale 1.50/150%: ""
+*Scale 2.00/200%: ""
+*Scale 3.00/300%: ""
+*Scale 4.00/400%: ""
+*CloseUI: *Scale
+
+*OpenUI *SkipBlankPage/SkipBlankPage: PickOne
+*OrderDependency: 40 AnySetup *SkipBlankPage
+*DefaultSkipBlankPage: False
+*SkipBlankPage True/Yes: ""
+*SkipBlankPage False/No: ""
+*CloseUI: *SkipBlankPage
+
+*OpenUI *Poster/Poster: PickOne
+*OrderDependency: 15 AnySetup *Poster
+*DefaultPoster: off
+*Poster off/off: ""
+*Poster 2/2X2: ""
+*Poster 3/3X3: ""
+*Poster 4/4X4: ""
+*CloseUI: *Poster
+
+*OpenUI *GammaCorrection/GammaCorrection: PickOne
+*OrderDependency: 20 AnySetup *GammaCorrection
+*DefaultGammaCorrection: 1.00
+*GammaCorrection 0.20/0.20: ""
+*GammaCorrection 0.25/0.25: ""
+*GammaCorrection 0.33/0.33: ""
+*GammaCorrection 0.50/0.50: ""
+*GammaCorrection 1.00/1.00: ""
+*GammaCorrection 2.00/2.00: ""
+*GammaCorrection 3.00/3.00: ""
+*GammaCorrection 4.00/4.00: ""
+*GammaCorrection 5.00/5.00: ""
+*CloseUI: *GammaCorrection
+
+*%CloseGroup: PrintoutMode
+*CloseGroup: General
+
+*OpenGroup: InstallableOptions/Installable Options
+*OpenUI *OptTray1/选配纸盒1: PickOne
+*OrderDependency: 0 AnySetup *OptTray1
+*DefaultOptTray1: NotInstalled
+*OptTray1 NotInstalled/未安装: ""
+*OptTray1 Installed/已安装: ""
+*CloseUI: *OptTray1
+
+*OpenUI *OptTray2/选配纸盒2: PickOne
+*OrderDependency: 0 AnySetup *OptTray2
+*DefaultOptTray2: NotInstalled
+*OptTray2 NotInstalled/未安装: ""
+*OptTray2 Installed/已安装: ""
+*CloseUI: *OptTray2
+*CloseGroup: InstallableOptions
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*zh_CN.Translation General/常规:""
+*zh_CN.Translation PageSize/介质尺寸: ""
+*zh_CN.PageSize Letter/信纸: ""
+*zh_CN.PageSize Legal/标准法律用纸: ""
+*zh_CN.PageSize Oficio/Oficio（墨西哥）: ""
+*zh_CN.PageSize B5/JIS B5: ""
+*zh_CN.PageSize B6/B6: ""
+*zh_CN.CustomPageSize True/自定义: ""
+*zh_CN.PageSize A4/A4: ""
+*zh_CN.PageSize Executive/实用纸张: ""
+*zh_CN.PageSize A5/A5: ""
+*zh_CN.PageSize A6/A6: ""
+*zh_CN.PageSize Folio/对开纸: ""
+*zh_CN.PageSize Statement/报表: ""
+*zh_CN.PageSize Postcard/Japanese Postcard: ""
+*zh_CN.PageSize EnvMonarch/7 3/4 信封: ""
+*zh_CN.PageSize Env9/9信封: ""
+*zh_CN.PageSize Env10/10信封: ""
+*zh_CN.PageSize EnvDL/DL 信封: ""
+*zh_CN.PageSize EnvC5/C5 信封: ""
+*zh_CN.PageSize ISOB5/B5 信封: ""
+*zh_CN.PageSize EnvC6/C6 信封: ""
+*zh_CN.PageSize ZL/ZL: ""
+*zh_CN.PageSize Big32K/Big 32K: ""
+*zh_CN.PageSize Big16K/Big 16K: ""
+*zh_CN.PageSize 32K/32K: ""
+*zh_CN.PageSize 16K/16K: ""
+*zh_CN.PageSize Yougata4/Yougata4: ""
+*zh_CN.PageSize DoublePostcardRotated/Postcard: ""
+*zh_CN.PageSize Younaga3/Younaga3: ""
+*zh_CN.PageSize Nagagata3/Nagagata3: ""
+*zh_CN.PageSize Yougata2/Yougata2: ""
+*zh_CN.Translation PageRegion/页面区域 : ""
+*zh_CN.PageRegion Letter/信纸: ""
+*zh_CN.PageRegion Legal/标准法律用纸: ""
+*zh_CN.PageRegion Oficio/Oficio（墨西哥）: ""
+*zh_CN.PageRegion B5/JIS B5: ""
+*zh_CN.PageRegion B6/B6: ""
+*zh_CN.PageRegion Custom/自定义: ""
+*zh_CN.PageRegion A4/A4: ""
+*zh_CN.PageRegion Executive/实用纸张: ""
+*zh_CN.PageRegion A5/A5: ""
+*zh_CN.PageRegion A6/A6: ""
+*zh_CN.PageRegion Folio/对开纸: ""
+*zh_CN.PageRegion Statement/报表: ""
+*zh_CN.PageRegion Postcard/Japanese Postcard: ""
+*zh_CN.PageRegion EnvMonarch/7 3/4 信封: ""
+*zh_CN.PageRegion Env9/9信封: ""
+*zh_CN.PageRegion Env10/10信封: ""
+*zh_CN.PageRegion EnvDL/DL 信封: ""
+*zh_CN.PageRegion EnvC5/C5 信封: ""
+*zh_CN.PageRegion ISOB5/B5 信封: ""
+*zh_CN.PageRegion EnvC6/C6 信封: ""
+*zh_CN.PageRegion ZL/ZL: ""
+*zh_CN.PageRegion Big32K/Big 32K: ""
+*zh_CN.PageRegion Big16K/Big 16K: ""
+*zh_CN.PageRegion 32K/32K: ""
+*zh_CN.PageRegion 16K/16K: ""
+*zh_CN.PageRegion Yougata4/Yougata4: ""
+*zh_CN.PageRegion DoublePostcardRotated/Postcard: ""
+*zh_CN.PageRegion Younaga3/Younaga3: ""
+*zh_CN.PageRegion Nagagata3/Nagagata3: ""
+*zh_CN.PageRegion Yougata2/Yougata2: ""
+
+*zh_CN.Translation InputSlot/纸张来源: ""
+*zh_CN.InputSlot AutoSelect/自动选择: ""
+*zh_CN.InputSlot MultifunTray/多功能进纸器: ""
+*zh_CN.InputSlot AutoFeed/自动进纸盒: ""
+*zh_CN.InputSlot OptTray1/选配纸盒1: ""
+*zh_CN.InputSlot OptTray2/选配纸盒2: ""
+*zh_CN.Translation FirstSlot/首页纸张来源: ""
+*zh_CN.FirstSlot SameAs/同纸张来源: ""
+*zh_CN.FirstSlot AutoSelect/自动选择: ""
+*zh_CN.FirstSlot MultifunTray/多功能进纸器: ""
+*zh_CN.FirstSlot AutoFeed/自动进纸盒: ""
+*zh_CN.FirstSlot OptTray1/选配纸盒1: ""
+*zh_CN.FirstSlot OptTray2/选配纸盒2: ""
+*zh_CN.Translation CoverSlot/小册子封面纸张来源: ""
+*zh_CN.CoverSlot SameAs/同纸张来源: ""
+*zh_CN.CoverSlot AutoSelect/自动选择: ""
+*zh_CN.CoverSlot MultifunTray/多功能进纸器: ""
+*zh_CN.CoverSlot AutoFeed/自动进纸盒: ""
+*zh_CN.CoverSlot OptTray1/选配纸盒1: ""
+*zh_CN.CoverSlot OptTray2/选配纸盒2: ""
+
+*zh_CN.Translation PrintoutMode/输出模式: ""
+
+*zh_CN.Translation ColorModel/颜色样式: ""
+*zh_CN.ColorModel Grayscale/黑白打印: ""
+
+*zh_CN.Translation PrinterResolution/分辨率: ""
+*zh_CN.PrinterResolution 600x600dpi/600dpi: ""
+*zh_CN.PrinterResolution 1200x1200dpi/1200dpi: ""
+
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex DuplexNoTumble/双面长边: ""
+*zh_CN.Duplex DuplexTumble/双面短边: ""
+*zh_CN.Duplex None/无: ""
+
+*zh_CN.Translation MediaType/介质类型: ""
+*zh_CN.MediaType Plain/普通纸: ""
+*zh_CN.MediaType Thick/厚纸: ""
+*zh_CN.MediaType Envelope/信封: ""
+*zh_CN.MediaType Transparency/透明胶片: ""
+*zh_CN.MediaType Cardstock/卡片纸: ""
+*zh_CN.MediaType Labels/标签纸: ""
+*zh_CN.MediaType Kleenex/薄纸: ""
+*zh_CN.MediaType Thicker/特厚纸: ""
+*zh_CN.MediaType Recycled/再生纸: ""
+*zh_CN.Translation FirstMediaType/首页介质类型: ""
+*zh_CN.FirstMediaType SameAs/同介质类型: ""
+*zh_CN.FirstMediaType Plain/普通纸: ""
+*zh_CN.FirstMediaType Thick/厚纸: ""
+*zh_CN.FirstMediaType Envelope/信封: ""
+*zh_CN.FirstMediaType Transparency/透明胶片: ""
+*zh_CN.FirstMediaType Cardstock/卡片纸: ""
+*zh_CN.FirstMediaType Labels/标签纸: ""
+*zh_CN.FirstMediaType Kleenex/薄纸: ""
+*zh_CN.FirstMediaType Thicker/特厚纸: ""
+*zh_CN.FirstMediaType Recycled/再生纸: ""
+*zh_CN.Translation CoverMediaType/小册子封面介质类型: ""
+*zh_CN.CoverMediaType SameAs/同介质类型: ""
+*zh_CN.CoverMediaType Plain/普通纸: ""
+*zh_CN.CoverMediaType Thick/厚纸: ""
+*zh_CN.CoverMediaType Envelope/信封: ""
+*zh_CN.CoverMediaType Transparency/透明胶片: ""
+*zh_CN.CoverMediaType Cardstock/卡片纸: ""
+*zh_CN.CoverMediaType Labels/标签纸: ""
+*zh_CN.CoverMediaType Kleenex/薄纸: ""
+*zh_CN.CoverMediaType Thicker/特厚纸: ""
+*zh_CN.CoverMediaType Recycled/再生纸: ""
+
+*zh_CN.Translation FirstPrint/首页使用不同纸张: ""
+*zh_CN.FirstPrint False/关闭: ""
+*zh_CN.FirstPrint True/开启: "" 
+
+*zh_CN.Translation Density/浓度: ""
+*zh_CN.Density Lighter/较淡: ""
+*zh_CN.Density Normal/正常: ""
+*zh_CN.Density Darker/较浓: ""
+
+*zh_CN.Translation Collate/逐份: ""
+*zh_CN.Collate True/开启: ""
+*zh_CN.Collate False/关闭: ""
+
+*% === Toner Save ===
+*zh_CN.Translation TonerMode/省墨: ""
+*zh_CN.TonerMode False/无: ""
+*zh_CN.TonerMode True/有: ""
+
+*% FineMode ===============
+*zh_CN.Translation FineMode/精细模式: ""
+*zh_CN.FineMode False/无: ""
+*zh_CN.FineMode True/有: ""
+
+*zh_CN.Translation PrinterFeedOrientation/A5进纸方向: ""
+*zh_CN.PrinterFeedOrientation ShortEdgeFeed/短边进纸: ""
+*zh_CN.PrinterFeedOrientation LongEdgeFeed/长边进纸: ""
+
+*% InstallableOptions ===============
+*zh_CN.Translation InstallableOptions/可安装选项: ""
+*zh_CN.Translation OptTray1/选配纸盒1: ""
+*zh_CN.OptTray1 NotInstalled/未安装: ""
+*zh_CN.OptTray1 Installed/已安装: ""
+*zh_CN.Translation OptTray2/选配纸盒2: ""
+*zh_CN.OptTray2 NotInstalled/未安装: ""
+*zh_CN.OptTray2 Installed/已安装: ""
+
+*zh_CN.Translation Booklet/小册子: ""
+*zh_CN.Booklet True/开: ""
+*zh_CN.Booklet False/关: ""
+*zh_CN.Translation CoverPrint/创建小册子封面: ""
+*zh_CN.CoverPrint False/关闭: ""
+*zh_CN.CoverPrint True/开启: "" 
+*zh_CN.Translation PrintOnFrontIn/打印在小册子封面内侧: ""
+*zh_CN.PrintOnFrontIn False/关闭: ""
+*zh_CN.PrintOnFrontIn True/开启: ""	 
+*zh_CN.Translation PrintOnFrontOut/打印在小册子封面外侧: ""
+*zh_CN.PrintOnFrontOut False/关闭: ""
+*zh_CN.PrintOnFrontOut True/开启: ""
+*zh_CN.Translation PrintOnBackIn/打印在小册子封底内侧: ""
+*zh_CN.PrintOnBackIn False/关闭: ""
+*zh_CN.PrintOnBackIn True/开启: ""
+*zh_CN.Translation PrintOnBackOut/打印在小册子封底外侧: ""
+*zh_CN.PrintOnBackOut False/关闭: ""
+*zh_CN.PrintOnBackOut True/开启: ""
+
+*zh_CN.Translation PrintMode/打印模式: ""
+*zh_CN.PrintMode NormalMode/常规模式: ""
+*zh_CN.PrintMode ImageMode/快速模式: ""
+
+*zh_CN.Translation Scale/缩放比: ""
+*zh_CN.Scale 0.25/25%: ""
+*zh_CN.Scale 0.50/50%: ""
+*zh_CN.Scale 1.00/100%: ""
+*zh_CN.Scale 1.10/110%: ""
+*zh_CN.Scale 1.20/120%: ""
+*zh_CN.Scale 1.30/130%: ""
+*zh_CN.Scale 1.40/140%: ""
+*zh_CN.Scale 1.50/150%: ""
+*zh_CN.Scale 2.00/200%: ""
+*zh_CN.Scale 3.00/300%: ""
+*zh_CN.Scale 4.00/400%: ""
+
+*zh_CN.Translation SkipBlankPage/跳过空白页: ""
+*zh_CN.SkipBlankPage True/开启: ""
+*zh_CN.SkipBlankPage False/关闭: ""
+
+*zh_CN.Translation OutputPageSize/输出尺寸: ""
+*zh_CN.OutputPageSize True/开启: ""
+*zh_CN.OutputPageSize False/关闭: ""
+
+*zh_CN.Translation Poster/海报打印: ""
+*zh_CN.Poster off/关闭: ""
+*zh_CN.Poster 2/2x2: ""
+*zh_CN.Poster 3/3x3: ""
+*zh_CN.Poster 4/4x4: ""
+
+*zh_CN.Translation GammaCorrection/Gamma调整: ""
+*zh_CN.GammaCorrection 0.20/0.20: ""
+*zh_CN.GammaCorrection 0.25/0.25: ""
+*zh_CN.GammaCorrection 0.33/0.33: ""
+*zh_CN.GammaCorrection 0.50/0.50: ""
+*zh_CN.GammaCorrection 1.00/1.00: ""
+*zh_CN.GammaCorrection 2.00/2.00: ""
+*zh_CN.GammaCorrection 3.00/3.00: ""
+*zh_CN.GammaCorrection 4.00/4.00: ""
+*zh_CN.GammaCorrection 5.00/5.00: ""

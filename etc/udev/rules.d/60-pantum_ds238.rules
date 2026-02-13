@@ -1,0 +1,11 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+# ds270
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="ff33", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+# ds238
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0303", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"
