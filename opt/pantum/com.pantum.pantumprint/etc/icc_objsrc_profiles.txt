@@ -1,0 +1,3 @@
+Graphic_RGB	None
+Image_RGB	None
+Text_RGB	None

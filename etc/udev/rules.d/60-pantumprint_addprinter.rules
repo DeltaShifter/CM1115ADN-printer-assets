@@ -1,0 +1,95 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+#该文件为usb句柄降权的配置文件，添加规则时请注意：属性idVendor、idProduct需与机型相匹配，并且必须小写
+
+#SUBSYSTEM=="usb_device", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="1e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#P9500DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0eee", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#P3380DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f2f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#P3355DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f56", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#P3302DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f4a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#P2555
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0835", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7180DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f2e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#M7155DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0f57", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CP9500DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0eef", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CP5052DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a319", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CP5050DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0242", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CP2515DN Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0320", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CP2507DN Plus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="031e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CP2257DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="031f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CP1115DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a450", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM7107DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0235", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CM5052DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a31a", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CM5050DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="0352", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#CM2277ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="030f", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM1115ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="a451", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#BP8000DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="035b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BP5135DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2719", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BP5128DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="270c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BP5125DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2721", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BP5102DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="270b", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM5135ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2720", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes" 
+
+#BM5102ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="273c", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BP5275DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2755", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM5275ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="2756", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM5285ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="275e", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"

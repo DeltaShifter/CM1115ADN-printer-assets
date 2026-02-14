@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PantumPrint Scan App
+Name[zh_CN]=奔图打印-扫描应用软件
+GenericName=PantumPrint Scan App
+GenericName[zh_CN]=奔图打印-扫描应用软件
+Comment=PantumPrint Scan Application For Scanner
+Comment[zh_CN]=奔图打印-扫描应用软件
+Exec=/opt/apps/com.pantum.pantumprint/files/bin/pp_scanapp
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Qt;Scanning
+Icon=/opt/apps/com.pantum.pantumprint/entries/icons/hicolor/256x256/apps/com.pantum.pantumprint.scanapp.png
